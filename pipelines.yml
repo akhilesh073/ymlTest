@@ -17,17 +17,17 @@ pipelines:
             - pushd $res_git_resourcePath
             - sudo chmod +x echoTest.sh
             - ./echoTest.sh
-            - sleep 5
+            - sleep 10
             - echo 'https://github.com/ChaitanyaVootla/ymlTest/edit/master/pipelines.yml'
       
-      - name: run_file_restore
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: testReport_u18
-        execution:
-          onExecute:
-            - printenv
+#       - name: run_file_restore
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: testReport_u18
+#         execution:
+#           onExecute:
+#             - printenv
 
 
   - name: trigger_test
