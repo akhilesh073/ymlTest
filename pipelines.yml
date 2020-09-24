@@ -4,10 +4,6 @@ resources:
     configuration:
       gitProvider: gitResource
       path: ChaitanyaVootla/ymlTest
-  - name: TryResource
-    type: IncomingWebhook
-    configuration:
-      webhookName: TryWebhookResource
 pipelines: 
   - name: state_test_git
     steps:
@@ -16,7 +12,6 @@ pipelines:
         configuration:
           inputResources:
             - name: git
-            - name: TryResource
         execution:
           onExecute:
             - pushd $res_git_resourcePath
