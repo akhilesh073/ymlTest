@@ -17,7 +17,7 @@ pipelines:
             - pushd $res_git_resourcePath
             - sudo chmod +x echoTest.sh
             - ./echoTest.sh
-            - sleep 2
+            - sleep 20
             - echo 'https://github.com/ChaitanyaVootla/ymlTest/edit/master/pipelines.yml'
       
       - name: run_file_restore
