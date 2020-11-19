@@ -28,6 +28,16 @@ pipelines:
 #         execution:
 #           onExecute:
 #             - printenv
+  - name: state_test_git_IN
+    steps:
+      - name: IN_TEST
+        type: Bash
+        configuration:
+          outputResources:
+            - name: git
+        execution:
+          onExecute:
+            - sleep 10
 
 
   - name: trigger_test
