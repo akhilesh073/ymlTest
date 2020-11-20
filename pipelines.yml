@@ -62,7 +62,7 @@ pipelines:
         execution:
           onExecute:
             - sleep 10
-      - name: IN_TEST
+      - name: IN_TEST_OUT
         type: Bash
         configuration:
           outputResources:
