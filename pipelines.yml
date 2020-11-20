@@ -62,7 +62,7 @@ pipelines:
         configuration:
           outputResources:
             - name: git
-            - nane: git_SANDWICH
+            - name: git_SANDWICH
           inputResources:
             - name: git_IN
         execution:
