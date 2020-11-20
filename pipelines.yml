@@ -29,6 +29,12 @@ resources:
     configuration:
       gitProvider: gitResource
       path: ChaitanyaVootla/ymlTest
+  - name: buildInfo
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: art
+      buildName: backend_build
+      buildNumber: 1
 pipelines: 
   - name: state_test_git
     steps:
@@ -39,6 +45,7 @@ pipelines:
             - name: git
           outputResources:
             - name: git_OUT
+            - name: buildInfo
         execution:
           onExecute:
             - pushd $res_git_resourcePath
@@ -110,6 +117,7 @@ pipelines:
             - name: git_OUT
           outputResources:
             - name: git_OUT_2
+            - name: buildInfo
         execution:
           onExecute:
             - sleep 10
