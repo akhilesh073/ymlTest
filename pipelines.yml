@@ -62,6 +62,16 @@ pipelines:
         execution:
           onExecute:
             - sleep 10
+      - name: IN_TEST
+        type: Bash
+        configuration:
+          outputResources:
+            - name: git_IN
+          inputSteps:
+            - name: IN_TEST
+        execution:
+          onExecute:
+            - sleep 10
   - name: IN_2
     steps:
       - name: IN_TEST_2
