@@ -24,6 +24,11 @@ resources:
     configuration:
       gitProvider: gitResource
       path: ChaitanyaVootla/ymlTest
+  - name: git_SANDWICH
+    type: GitRepo
+    configuration:
+      gitProvider: gitResource
+      path: ChaitanyaVootla/ymlTest
 pipelines: 
   - name: state_test_git
     steps:
@@ -57,6 +62,7 @@ pipelines:
         configuration:
           outputResources:
             - name: git
+            - nane: git_SANDWICH
           inputResources:
             - name: git_IN
         execution:
@@ -65,8 +71,8 @@ pipelines:
       - name: IN_TEST_OUT
         type: Bash
         configuration:
-          outputResources:
-            - name: git_IN
+          inputResources:
+            - name: git_SANDWICH
           inputSteps:
             - name: IN_TEST
         execution:
