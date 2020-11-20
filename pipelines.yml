@@ -120,6 +120,7 @@ pipelines:
         configuration:
           inputResources:
             - name: git_OUT_2
+            - name: git
             - name: git_OUT_COMMON
         execution:
           onExecute:
