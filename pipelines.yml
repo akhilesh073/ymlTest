@@ -121,6 +121,8 @@ pipelines:
         configuration:
           inputResources:
             - name: git_OUT
+            - name: buildInfo2
+            - name: buildInfo3
           outputResources:
             - name: git_OUT_2
             - name: git_OUT_COMMON
@@ -134,6 +136,8 @@ pipelines:
         configuration:
           inputResources:
             - name: git_OUT
+            - name: buildInfo2
+            - name: buildInfo3
           outputResources:
             - name: git_OUT_2
             - name: buildInfo
