@@ -106,6 +106,9 @@ pipelines:
       - name: IN_TEST_2
         type: Bash
         configuration:
+          inputResources:
+            - name: buildInfo2
+            - name: buildInfo3
           outputResources:
             - name: git
         execution:
