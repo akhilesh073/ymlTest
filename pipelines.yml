@@ -29,6 +29,11 @@ resources:
     configuration:
       gitProvider: gitResource
       path: ChaitanyaVootla/ymlTest
+  - name: git_SANDWICH_2
+    type: GitRepo
+    configuration:
+      gitProvider: gitResource
+      path: ChaitanyaVootla/ymlTest
   - name: buildInfo
     type: BuildInfo
     configuration:
@@ -42,6 +47,18 @@ resources:
       buildName: backend_build
       buildNumber: 1
   - name: buildInfo3
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: art
+      buildName: backend_build
+      buildNumber: 1
+  - name: buildInfo4
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: art
+      buildName: backend_build
+      buildNumber: 1
+  - name: buildInfo5
     type: BuildInfo
     configuration:
       sourceArtifactory: art
@@ -88,6 +105,8 @@ pipelines:
             - name: git_IN
             - name: buildInfo2
             - name: buildInfo3
+            - name: buildInfo4
+            - name: buildInfo5
         execution:
           onExecute:
             - sleep 10
@@ -109,6 +128,8 @@ pipelines:
           inputResources:
             - name: buildInfo2
             - name: buildInfo3
+            - name: buildInfo4
+            - name: buildInfo5
           outputResources:
             - name: git
         execution:
@@ -151,10 +172,26 @@ pipelines:
         configuration:
           inputResources:
             - name: git_OUT_2
-            - name: git
+            - name: git_SANDWICH_2
             - name: git_OUT_COMMON
             - name: buildInfo2
             - name: buildInfo3
+        execution:
+          onExecute:
+            - sleep 10
+  - name: OUT_SANDWICH
+    steps:
+      - name: OUT_SANDWICH_TEST
+        type: Bash
+        configuration:
+          inputResources:
+            - name: git
+            - name: buildInfo2
+            - name: buildInfo3
+            - name: buildInfo4
+            - name: buildInfo5
+          outputResources:
+            - name: git_SANDWICH_2
         execution:
           onExecute:
             - sleep 10
