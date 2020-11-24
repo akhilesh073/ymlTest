@@ -35,6 +35,18 @@ resources:
       sourceArtifactory: art
       buildName: backend_build
       buildNumber: 1
+  - name: buildInfo2
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: art
+      buildName: backend_build
+      buildNumber: 1
+  - name: buildInfo3
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: art
+      buildName: backend_build
+      buildNumber: 1
 pipelines: 
   - name: state_test_git
     steps:
@@ -43,6 +55,8 @@ pipelines:
         configuration:
           inputResources:
             - name: git
+            - name: buildInfo2
+            - name: buildInfo3
           outputResources:
             - name: git_OUT
             - name: buildInfo
@@ -72,6 +86,8 @@ pipelines:
             - name: git_SANDWICH
           inputResources:
             - name: git_IN
+            - name: buildInfo2
+            - name: buildInfo3
         execution:
           onExecute:
             - sleep 10
@@ -130,6 +146,8 @@ pipelines:
             - name: git_OUT_2
             - name: git
             - name: git_OUT_COMMON
+            - name: buildInfo2
+            - name: buildInfo3
         execution:
           onExecute:
             - sleep 10
