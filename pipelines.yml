@@ -144,6 +144,7 @@ pipelines:
             - name: git_OUT
             - name: buildInfo2
             - name: buildInfo3
+            - name: buildInfo4
           outputResources:
             - name: git_OUT_2
             - name: git_OUT_COMMON
@@ -159,6 +160,7 @@ pipelines:
             - name: git_OUT
             - name: buildInfo2
             - name: buildInfo3
+            - name: buildInfo4
           outputResources:
             - name: git_OUT_2
             - name: buildInfo
