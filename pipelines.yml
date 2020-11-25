@@ -322,6 +322,12 @@ pipelines:
     steps:
       - name: orphan_test_orphan_test_orphan_test_orphan_test_orphan_test_orphan_test_orphan_test_orphan_test_
         type: Bash
+        configuration:
+          inputResources:
+            - name: buildInfo2
+            - name: buildInfo3
+            - name: buildInfo4
+            - name: buildInfo5
         execution:
           onExecute:
             - sleep 10
