@@ -39,7 +39,7 @@ resources:
     configuration:
       gitProvider: gitResource
       path: ChaitanyaVootla/ymlTest
-  - name: git_single_3
+  - name: git_single_2
     type: GitRepo
     configuration:
       gitProvider: gitResource
