@@ -34,6 +34,21 @@ resources:
     configuration:
       gitProvider: gitResource
       path: ChaitanyaVootla/ymlTest
+  - name: git_single_1
+    type: GitRepo
+    configuration:
+      gitProvider: gitResource
+      path: ChaitanyaVootla/ymlTest
+  - name: git_single_3
+    type: GitRepo
+    configuration:
+      gitProvider: gitResource
+      path: ChaitanyaVootla/ymlTest
+  - name: git_single_3
+    type: GitRepo
+    configuration:
+      gitProvider: gitResource
+      path: ChaitanyaVootla/ymlTest
   - name: buildInfo
     type: BuildInfo
     configuration:
@@ -324,10 +339,9 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: buildInfo2
-            - name: buildInfo3
-            - name: buildInfo4
-            - name: buildInfo5
+            - name: git_single_1
+            - name: git_single_2
+            - name: git_single_3
         execution:
           onExecute:
             - sleep 10
