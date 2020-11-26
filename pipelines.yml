@@ -193,6 +193,9 @@ pipelines:
             - name: git_OUT_COMMON
             - name: buildInfo2
             - name: buildInfo3
+            - name: git_single_1
+            - name: git_single_2
+            - name: git_single_3
         execution:
           onExecute:
             - sleep 10
