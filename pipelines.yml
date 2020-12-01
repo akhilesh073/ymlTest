@@ -216,6 +216,7 @@ pipelines:
               trigger: false
             - name: git_single_3
               trigger: false
+            - name: git
         execution:
           onExecute:
             - sleep 10
