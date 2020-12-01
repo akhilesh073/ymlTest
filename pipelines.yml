@@ -172,6 +172,7 @@ pipelines:
         configuration:
           inputResources:
             - name: git_OUT
+              trigger: false
             - name: buildInfo2
             - name: buildInfo3
             - name: buildInfo4
