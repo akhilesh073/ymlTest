@@ -228,7 +228,7 @@ pipelines:
         configuration:
           inputResources:
             - name: git
-              trigger: false
+#               trigger: false
             - name: buildInfo2
             - name: buildInfo3
             - name: buildInfo4
