@@ -206,7 +206,7 @@ pipelines:
         configuration:
           inputResources:
             - name: git_OUT_2
-            - name: git_OUT
+#             - name: git_OUT
             - name: git_SANDWICH_2
             - name: git_OUT_COMMON
             - name: buildInfo2
