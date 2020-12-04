@@ -402,13 +402,13 @@ pipelines:
         execution:
           onExecute:
             - sleep 10
-#   - name: single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1
-#     steps:
-#       - name: single_1single_1single_1single_1single_1single_1single_1
-#         type: Bash
-#         execution:
-#           onExecute:
-#             - sleep 10
+  - name: single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1
+    steps:
+      - name: single_1single_1single_1single_1single_1single_1single_1
+        type: Bash
+        execution:
+          onExecute:
+            - sleep 10
   - name: single_3
     steps:
       - name: single_3
