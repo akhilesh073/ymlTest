@@ -59,6 +59,11 @@ resources:
     configuration:
       gitProvider: gitResource
       path: ChaitanyaVootla/ymlTest
+  - name: git_lvl_2
+    type: GitRepo
+    configuration:
+      gitProvider: gitResource
+      path: ChaitanyaVootla/ymlTest
   - name: git_single_6
     type: GitRepo
     configuration:
@@ -218,6 +223,18 @@ pipelines:
             - name: git_single_3
               trigger: false
             - name: git
+          outputResources:
+            - name: git_lvl_2
+        execution:
+          onExecute:
+            - sleep 10
+  - name: OUT_LVL_3
+    steps:
+      - name: OUT_LVL_3_TEST
+        type: Bash
+        configuration:
+          inputResources:
+            - name: git_lvl_2
         execution:
           onExecute:
             - sleep 10
