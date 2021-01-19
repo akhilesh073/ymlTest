@@ -232,7 +232,7 @@ pipelines:
             - name: prop1
         execution:
           onExecute:
-            - write_output prop1 runId=$current_runid
+            - write_output prop1 runId=$run_number
   - name: OUT_LVL_3
     steps:
       - name: OUT_LVL_3_TEST
