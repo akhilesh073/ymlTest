@@ -1,4 +1,9 @@
 resources:
+  - name: prop1
+    type: PropertyBag
+    configuration:
+      key1: value1
+      key2: value2
   - name: git
     type: GitRepo
     configuration:
@@ -224,17 +229,17 @@ pipelines:
               trigger: false
             - name: git
           outputResources:
-            - name: git_lvl_2
+            - name: prop1
         execution:
           onExecute:
-            - sleep 10
+            - write_output prop "test:value"
   - name: OUT_LVL_3
     steps:
       - name: OUT_LVL_3_TEST
         type: Bash
         configuration:
           inputResources:
-            - name: git_lvl_2
+            - name: prop1
         execution:
           onExecute:
             - sleep 10
