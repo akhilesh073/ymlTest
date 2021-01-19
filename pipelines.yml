@@ -243,6 +243,16 @@ pipelines:
         execution:
           onExecute:
             - sleep 10
+  - name: OUT_LVL_3_2
+    steps:
+      - name: OUT_LVL_3_2_TEST
+        type: Bash
+        configuration:
+          inputResources:
+            - name: prop1
+        execution:
+          onExecute:
+            - sleep 10
   - name: OUT_SANDWICH
     steps:
       - name: OUT_SANDWICH_TEST
