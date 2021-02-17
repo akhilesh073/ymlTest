@@ -105,47 +105,47 @@ resources:
       buildName: backend_build
       buildNumber: 1
 pipelines: 
-  - name: S_Matrix_0030
-    steps:
-      - name: S_Matrix_0030
-        type: Matrix
-        stepMode: Bash
-        stepletMultipliers:
-          environmentVariables:
-            - animal: dog
-              bird: sparrow
-            - animal: cat
-              bird: crow
-          runtimes:
-            - type: image
-              image:
-                auto:
-                  language: node
-                  versions:
-                    - 8.16.0   
-        execution:
-          onExecute:
-            - echo "Executing matrix step on ${steplet_id}"
-            - echo "Variation animal = ${animal}, bird = ${bird}"
-  - name: state_test_git
-    steps:
-      - name: testReport_u18
-        type: Bash
-        configuration:
-          inputResources:
-            - name: git
-            - name: buildInfo2
-            - name: buildInfo3
-          outputResources:
-            - name: git_OUT
-            - name: buildInfo
-        execution:
-          onExecute:
-            - pushd $res_git_resourcePath
-            - sudo chmod +x echoTest.sh
-            - ./echoTest.sh
-            - sleep 10
-            - echo 'https://github.com/ChaitanyaVootla/ymlTest/edit/master/pipelines.yml'
+#   - name: S_Matrix_0030
+#     steps:
+#       - name: S_Matrix_0030
+#         type: Matrix
+#         stepMode: Bash
+#         stepletMultipliers:
+#           environmentVariables:
+#             - animal: dog
+#               bird: sparrow
+#             - animal: cat
+#               bird: crow
+#           runtimes:
+#             - type: image
+#               image:
+#                 auto:
+#                   language: node
+#                   versions:
+#                     - 8.16.0   
+#         execution:
+#           onExecute:
+#             - echo "Executing matrix step on ${steplet_id}"
+#             - echo "Variation animal = ${animal}, bird = ${bird}"
+#   - name: state_test_git
+#     steps:
+#       - name: testReport_u18
+#         type: Bash
+#         configuration:
+#           inputResources:
+#             - name: git
+#             - name: buildInfo2
+#             - name: buildInfo3
+#           outputResources:
+#             - name: git_OUT
+#             - name: buildInfo
+#         execution:
+#           onExecute:
+#             - pushd $res_git_resourcePath
+#             - sudo chmod +x echoTest.sh
+#             - ./echoTest.sh
+#             - sleep 10
+#             - echo 'https://github.com/ChaitanyaVootla/ymlTest/edit/master/pipelines.yml'
       
 #       - name: run_file_restore
 #         type: Bash
@@ -198,39 +198,39 @@ pipelines:
         execution:
           onExecute:
             - sleep 10
-  - name: OUT
-    steps:
-      - name: OUT_TEST
-        type: Bash
-        configuration:
-          inputResources:
-            - name: git_OUT
-              trigger: false
-            - name: buildInfo2
-            - name: buildInfo3
-            - name: buildInfo4
-          outputResources:
-            - name: git_OUT_2
-            - name: git_OUT_COMMON
-        execution:
-          onExecute:
-            - sleep 10
-  - name: OUT_2
-    steps:
-      - name: OUT_TEST_2
-        type: Bash
-        configuration:
-          inputResources:
-            - name: git_OUT
-            - name: buildInfo2
-            - name: buildInfo3
-            - name: buildInfo4
-          outputResources:
-            - name: git_OUT_2
-            - name: buildInfo
-        execution:
-          onExecute:
-            - sleep 10
+#   - name: OUT
+#     steps:
+#       - name: OUT_TEST
+#         type: Bash
+#         configuration:
+#           inputResources:
+#             - name: git_OUT
+#               trigger: false
+#             - name: buildInfo2
+#             - name: buildInfo3
+#             - name: buildInfo4
+#           outputResources:
+#             - name: git_OUT_2
+#             - name: git_OUT_COMMON
+#         execution:
+#           onExecute:
+#             - sleep 10
+#   - name: OUT_2
+#     steps:
+#       - name: OUT_TEST_2
+#         type: Bash
+#         configuration:
+#           inputResources:
+#             - name: git_OUT
+#             - name: buildInfo2
+#             - name: buildInfo3
+#             - name: buildInfo4
+#           outputResources:
+#             - name: git_OUT_2
+#             - name: buildInfo
+#         execution:
+#           onExecute:
+#             - sleep 10
   - name: OUT_LVL_2
     steps:
       - name: OUT_LVL_2_TEST
@@ -255,26 +255,26 @@ pipelines:
         execution:
           onExecute:
             - write_output prop1 runId=$run_number
-  - name: OUT_LVL_3
-    steps:
-      - name: OUT_LVL_3_TEST
-        type: Bash
-        configuration:
-          inputResources:
-            - name: prop1
-        execution:
-          onExecute:
-            - sleep 10
-  - name: OUT_LVL_3_2
-    steps:
-      - name: OUT_LVL_3_2_TEST
-        type: Bash
-        configuration:
-          inputResources:
-            - name: prop1
-        execution:
-          onExecute:
-            - sleep 10
+#   - name: OUT_LVL_3
+#     steps:
+#       - name: OUT_LVL_3_TEST
+#         type: Bash
+#         configuration:
+#           inputResources:
+#             - name: prop1
+#         execution:
+#           onExecute:
+#             - sleep 10
+#   - name: OUT_LVL_3_2
+#     steps:
+#       - name: OUT_LVL_3_2_TEST
+#         type: Bash
+#         configuration:
+#           inputResources:
+#             - name: prop1
+#         execution:
+#           onExecute:
+#             - sleep 10
   - name: OUT_SANDWICH
     steps:
       - name: OUT_SANDWICH_TEST
@@ -294,216 +294,216 @@ pipelines:
             - sleep 10
 
 
-  - name: trigger_test
-    steps:
-      - name: trigger_1
-        type: Bash
-        configuration:
-          affinityGroup: trigger
-          priority: 0
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_2
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_1
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_3
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_2
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_4
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_3
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_5
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_1
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_6
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_4
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_7
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_5
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_8
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_1
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_9
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_1
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_10
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_1
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_11
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_7
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_12
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_9
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_13
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_4
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-  - name: single_1
-    steps:
-      - name: single_1
-        type: Bash
-        configuration:
-          inputResources:
-            - name: git_single_1
-              trigger: false
-            - name: git_single_2
-            - name: git_single_3
-              trigger: false
-            - name: git_single_4
-            - name: git_single_5
-            - name: git_single_6
-              trigger: false
-        execution:
-          onExecute:
-            - sleep 10
+#   - name: trigger_test
+#     steps:
+#       - name: trigger_1
+#         type: Bash
+#         configuration:
+#           affinityGroup: trigger
+#           priority: 0
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_2
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_1
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_3
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_2
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_4
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_3
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_5
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_1
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_6
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_4
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_7
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_5
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_8
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_1
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_9
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_1
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_10
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_1
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_11
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_7
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_12
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_9
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_13
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_4
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#   - name: single_1
+#     steps:
+#       - name: single_1
+#         type: Bash
+#         configuration:
+#           inputResources:
+#             - name: git_single_1
+#               trigger: false
+#             - name: git_single_2
+#             - name: git_single_3
+#               trigger: false
+#             - name: git_single_4
+#             - name: git_single_5
+#             - name: git_single_6
+#               trigger: false
+#         execution:
+#           onExecute:
+#             - sleep 10
 
-  - name: single_2
-    steps:
-      - name: single_2
-        type: Bash
-        execution:
-          onExecute:
-            - sleep 10
-  - name: single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1
-    steps:
-      - name: single_1single_1single_1single_1single_1single_1single_1
-        type: Bash
-        execution:
-          onExecute:
-            - sleep 10
-  - name: single_3
-    steps:
-      - name: single_3
-        type: Bash
-        execution:
-          onExecute:
-            - sleep 10
+#   - name: single_2
+#     steps:
+#       - name: single_2
+#         type: Bash
+#         execution:
+#           onExecute:
+#             - sleep 10
+#   - name: single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1single_1
+#     steps:
+#       - name: single_1single_1single_1single_1single_1single_1single_1
+#         type: Bash
+#         execution:
+#           onExecute:
+#             - sleep 10
+#   - name: single_3
+#     steps:
+#       - name: single_3
+#         type: Bash
+#         execution:
+#           onExecute:
+#             - sleep 10
 
-  - name: single_4
-    steps:
-      - name: single_4
-        type: Bash
-        execution:
-          onExecute:
-            - sleep 10
+#   - name: single_4
+#     steps:
+#       - name: single_4
+#         type: Bash
+#         execution:
+#           onExecute:
+#             - sleep 10
 
-  - name: single_5
-    steps:
-      - name: single_5
-        type: Bash
-        execution:
-          onExecute:
-            - sleep 10
+#   - name: single_5
+#     steps:
+#       - name: single_5
+#         type: Bash
+#         execution:
+#           onExecute:
+#             - sleep 10
 
-  - name: single_6
-    steps:
-      - name: single_6
-        type: Bash
-        execution:
-          onExecute:
-            - sleep 10
+#   - name: single_6
+#     steps:
+#       - name: single_6
+#         type: Bash
+#         execution:
+#           onExecute:
+#             - sleep 10
 
-  - name: single_7
-    steps:
-      - name: single_7
-        type: Bash
-        execution:
-          onExecute:
-            - sleep 10
+#   - name: single_7
+#     steps:
+#       - name: single_7
+#         type: Bash
+#         execution:
+#           onExecute:
+#             - sleep 10
 
-  - name: single_8
-    steps:
-      - name: single_8
-        type: Bash
-        execution:
-          onExecute:
-            - sleep 10
-  - name: single_9
-    steps:
-      - name: single_9
-        type: Bash
-        execution:
-          onExecute:
-            - sleep 10
-  - name: single_10
-    steps:
-      - name: single_10
-        type: Bash
-        execution:
-          onExecute:
-            - sleep 10
+#   - name: single_8
+#     steps:
+#       - name: single_8
+#         type: Bash
+#         execution:
+#           onExecute:
+#             - sleep 10
+#   - name: single_9
+#     steps:
+#       - name: single_9
+#         type: Bash
+#         execution:
+#           onExecute:
+#             - sleep 10
+#   - name: single_10
+#     steps:
+#       - name: single_10
+#         type: Bash
+#         execution:
+#           onExecute:
+#             - sleep 10
