@@ -112,6 +112,8 @@ pipelines:
         execution:
           onExecute:
             - echo "Cloning cypress test repo"
+            - git config --global user.name "Vootla Chaitanya"
+            - git config --global user.email "vootlac@jfrog.com"
             - git clone ssh://git@git.jfrog.info/~vootlac/cypress.git
             - cd cypress
             - npm install
