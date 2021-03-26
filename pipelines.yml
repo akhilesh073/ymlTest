@@ -6,9 +6,9 @@ pipelines:
         type: Bash
         configuration:
           environmentVariables:
-            serverURL: ""
-            serverUserName: ""
-            serverUserPass: ""
+            serverURL: "https://<server-address>/artifactory"
+            serverUserName: "admin"
+            serverUserPass: "password"
         execution:
           onExecute:
             - echo "Cloning cypress test repo"
