@@ -105,7 +105,7 @@ resources:
       buildName: backend_build
       buildNumber: 1
 pipelines:
-  - name: S_Matrix_0030
+  - name: Cypress
     steps:
       - name: cypressSetup
         type: Bash
