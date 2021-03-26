@@ -109,9 +109,15 @@ pipelines:
     steps:
       - name: cypressSetup
         type: Bash
+        configuration:
+          environmentVariables:
+            serverURL: null
+            serverUserName: null
+            serverUserPass: null
         execution:
           onExecute:
             - echo "Cloning cypress test repo"
+            - sudo jfrog rt config chaitanya --url $serverURL --user $serverUserName --password $serverUserPass
             - jfrog rt dl --server-id=chaitanya  cypress/pipelines.cypress-0.0.1.tgz
             - cd cypress
             - npm install
