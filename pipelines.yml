@@ -104,7 +104,16 @@ resources:
       sourceArtifactory: art
       buildName: backend_build
       buildNumber: 1
-pipelines: 
+pipelines:
+  - name: cypressSetup
+    type: Bash
+    execution:
+      onExecute:
+        - echo "Cloning cypress test repo"
+        - git clone ssh://git@git.jfrog.info/~vootlac/cypress.git
+        - cd cypress
+        - npm install
+        - npx cypress run
 #   - name: S_Matrix_0030
 #     steps:
 #       - name: S_Matrix_0030
