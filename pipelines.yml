@@ -13,8 +13,8 @@ pipelines:
           onExecute:
             - echo "Cloning cypress test repo"
             - sudo jfrog rt config chaitanya --url $serverURL --user $serverUserName --password $serverUserPass
-            - jfrog rt dl --server-id=chaitanya  cypress/pipelines.cypress-0.0.1.tgz
-            - cd cypress
+            - jfrog rt dl --server-id=chaitanya --explode cypress/pipelines.cypress-0.0.1.tgz
+            - cd package
             - npm install
             - npx cypress run
 
