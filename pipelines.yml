@@ -112,8 +112,8 @@ pipelines:
         execution:
           onExecute:
             - echo "Cloning cypress test repo"
-            - jfrog rt config add
-            - jfrog rt dl --server-id=add  cypress/pipelines.cypress-0.0.1.tgz
+            - sudo jfrog rt config chaitanya --url https://chaitanya.jfrogdev.org/artifactory --user admin --password 1@Password
+            - jfrog rt dl --server-id=chaitanya  cypress/pipelines.cypress-0.0.1.tgz
             - cd cypress
             - npm install
             - npx cypress run
