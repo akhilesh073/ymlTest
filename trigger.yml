@@ -901,3 +901,903 @@ pipelines:
           onExecute:
             - sleep 1
             - echo "done"
+      - name: trigger_8_1
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11
+            - name: trigger_15
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_8_2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_8_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_8_3
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_8_2
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_8_x
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_8_3
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_8_4
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_8_x
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_8_5
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_8_4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_8_y
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_8_5
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_8_6
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_8_y
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_8_7
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_8_6
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_8_8
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_8_7
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_8_9
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_8_8
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_9_1
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11
+            - name: trigger_15
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_9_2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_9_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_9_3
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_9_2
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_9_x
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_9_3
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_9_4
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_9_x
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_9_5
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_9_4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_9_y
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_9_5
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_9_6
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_9_y
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_9_7
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_9_6
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_9_8
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_9_7
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_9_9
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_9_8
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_10_1
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11
+            - name: trigger_15
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_10_2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_10_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_10_3
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_10_2
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_10_x
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_10_3
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_10_4
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_10_x
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_10_5
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_10_4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_10_y
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_10_5
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_10_6
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_10_y
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_10_7
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_10_6
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_10_8
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_10_7
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_10_9
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_10_8
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_11_1
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11
+            - name: trigger_15
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_11_2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_11_3
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11_2
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_11_x
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11_3
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_11_4
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11_x
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_11_5
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11_4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_11_y
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11_5
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_11_6
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11_y
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_11_7
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11_6
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_11_8
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11_7
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_11_9
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11_8
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_12_1
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_12
+            - name: trigger_15
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_12_2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_12_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_12_3
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_12_2
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_12_x
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_12_3
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_12_4
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_12_x
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_12_5
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_12_4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_12_y
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_12_5
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_12_6
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_12_y
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_12_7
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_12_6
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_12_8
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_12_7
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_12_9
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_12_8
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_13_1
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_13
+            - name: trigger_15
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_13_2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_13_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_13_3
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_13_2
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_13_x
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_13_3
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_13_4
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_13_x
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_13_5
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_13_4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_13_y
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_13_5
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_13_6
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_13_y
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_13_7
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_13_6
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_13_8
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_13_7
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_13_9
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_13_8
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_14_1
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_14
+            - name: trigger_15
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_14_2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_14_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_14_3
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_14_2
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_14_x
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_14_3
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_14_4
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_14_x
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_14_5
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_14_4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_14_y
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_14_5
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_14_6
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_14_y
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_14_7
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_14_6
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_14_8
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_14_7
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_14_9
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_14_8
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_15_1
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_15
+            - name: trigger_15
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_15_2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_15_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_15_3
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_15_2
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_15_x
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_15_3
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_15_4
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_15_x
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_15_5
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_15_4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_15_y
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_15_5
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_15_6
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_15_y
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_15_7
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_15_6
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_15_8
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_15_7
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_15_9
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_15_8
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_16_1
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_16
+            - name: trigger_16
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_16_2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_16_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_16_3
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_16_2
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_16_x
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_16_3
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_16_4
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_16_x
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_16_5
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_16_4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_16_y
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_16_5
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_16_6
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_16_y
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_16_7
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_16_6
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_16_8
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_16_7
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_16_9
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_16_8
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
