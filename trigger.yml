@@ -148,7 +148,7 @@ pipelines:
             - name: trigger_4
             - name: trigger_3
           inputResources:
-            - name: BuildInfo
+            - name: buildInfoTrigger
         execution:
           onExecute:
             - sleep 1
@@ -160,7 +160,7 @@ pipelines:
             - name: trigger_13
             - name: trigger_6
           inputResources:
-            - name: BuildInfo
+            - name: buildInfoTrigger
         execution:
           onExecute:
             - sleep 1
@@ -192,7 +192,7 @@ pipelines:
           inputSteps:
             - name: trigger_5
           inputResources:
-            - name: BuildInfo
+            - name: buildInfoTrigger
               trigger: false
         execution:
           onExecute:
