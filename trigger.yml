@@ -1,0 +1,177 @@
+resources:
+  - name: propertyTrigger
+    type: PropertyBag
+    configuration:
+      key1: value1
+      key2: value2
+  - name: gitTrigger
+    type: GitRepo
+    configuration:
+      gitProvider: gitResource
+      path: ChaitanyaVootla/ymlTest
+  - name: buildInfoTrigger
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: art
+      buildName: backend_build
+      buildNumber: 1
+pipelines:
+  - name: trigger_test
+    steps:
+      - name: trigger_1
+        type: Bash
+        configuration:
+          affinityGroup: trigger
+          priority: 0
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_3
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_2
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_4
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_3
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_5
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_6
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_7
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_5
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_8
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_9
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_10
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_11
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_7
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_12
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_9
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_13
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_4
+            - name: trigger_3
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_14
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_13
+            - name: trigger_6
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_15
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11
+            - name: trigger_12
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_16
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_10
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_17
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_5
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+ 
