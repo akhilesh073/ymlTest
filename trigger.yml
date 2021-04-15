@@ -198,4 +198,104 @@ pipelines:
           onExecute:
             - sleep 1
             - echo "done"
+      - name: trigger_18
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_11
+            - name: trigger_15
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_19
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_18
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_20
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_19
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_21
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_20
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_22
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_21
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_23
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_22
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_24
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_23
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_25
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_24
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_26
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_25
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_27
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_26
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: trigger_28
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: trigger_27
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
  
