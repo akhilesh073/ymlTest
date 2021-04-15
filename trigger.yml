@@ -21,6 +21,8 @@ pipelines:
       - name: trigger_1
         type: Bash
         configuration:
+          inputResources:
+            - name: gitTrigger
           affinityGroup: trigger
           priority: 0
         execution:
@@ -32,6 +34,8 @@ pipelines:
         configuration:
           inputSteps:
             - name: trigger_1
+          inputResources:
+            - name: gitTrigger
         execution:
           onExecute:
             - sleep 1
@@ -41,6 +45,9 @@ pipelines:
         configuration:
           inputSteps:
             - name: trigger_2
+          inputResources:
+            - name: propertyTrigger
+              trigger: false
         execution:
           onExecute:
             - sleep 1
@@ -68,6 +75,9 @@ pipelines:
         configuration:
           inputSteps:
             - name: trigger_4
+          inputResources:
+            - name: propertyTrigger
+              trigger: false
         execution:
           onExecute:
             - sleep 1
@@ -104,6 +114,8 @@ pipelines:
         configuration:
           inputSteps:
             - name: trigger_1
+          inputResources:
+            - name: gitTrigger
         execution:
           onExecute:
             - sleep 1
@@ -113,6 +125,9 @@ pipelines:
         configuration:
           inputSteps:
             - name: trigger_7
+          inputResources:
+            - name: gitTrigger
+              trigger: false
         execution:
           onExecute:
             - sleep 1
@@ -132,6 +147,8 @@ pipelines:
           inputSteps:
             - name: trigger_4
             - name: trigger_3
+          inputResources:
+            - name: BuildInfo
         execution:
           onExecute:
             - sleep 1
@@ -142,6 +159,8 @@ pipelines:
           inputSteps:
             - name: trigger_13
             - name: trigger_6
+          inputResources:
+            - name: BuildInfo
         execution:
           onExecute:
             - sleep 1
@@ -152,6 +171,8 @@ pipelines:
           inputSteps:
             - name: trigger_11
             - name: trigger_12
+          inputResources:
+            - name: propertyTrigger
         execution:
           onExecute:
             - sleep 1
@@ -170,6 +191,9 @@ pipelines:
         configuration:
           inputSteps:
             - name: trigger_5
+          inputResources:
+            - name: BuildInfo
+              trigger: false
         execution:
           onExecute:
             - sleep 1
