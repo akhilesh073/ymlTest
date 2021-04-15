@@ -354,7 +354,7 @@ pipelines:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: trigger_2_5
+      - name: trigger_2_y
         type: Bash
         configuration:
           inputSteps:
@@ -367,7 +367,7 @@ pipelines:
         type: Bash
         configuration:
           inputSteps:
-            - name: trigger_2_5
+            - name: trigger_2_y
         execution:
           onExecute:
             - sleep 1
