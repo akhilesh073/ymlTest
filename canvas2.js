@@ -37,7 +37,7 @@ let newLeafNames = [];
 let hasStarted = false;
 
 let totalCount = 1;
-const limit = 2000;
+const limit = 1000;
 const createStep = (input, stopProp) => {
     const name = 'ct' + shortUuid.generate().replace(/-/g, '');
     if (!input || stopProp) {
