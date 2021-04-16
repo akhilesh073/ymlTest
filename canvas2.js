@@ -35,7 +35,7 @@ let leafNames = [];
 let hasStarted = false;
 
 const createStep = (input, stopProp) => {
-    if (!input) console.log("noin")
+    if (!input) console.log("********* NO INPUT")
     const name = 'ct' + shortUuid.generate().replace(/-/g, '');
     const step = {
         name: name,
@@ -57,22 +57,24 @@ const createStep = (input, stopProp) => {
             ]
         }
     };
-    console.log('step created')
+    console.log('-----')
     if (input) {
         step.configuration.inputSteps = [{ name: input }];
     }
     jsonObject.pipelines[0].steps.push(step);
     if (!stopProp) {
+        console.log('MAIN', name)
         for (let count = 1; count <= 3; count++) {
             const leafName = createStep(name, true);
             console.log("LEAF", leafName);
-            leafNames.push(createStep(name, true));
+            leafNames.push(leafName);
         }
     }
     return name;
 }
 
 for (let levelNo = 1; levelNo <= levels; levelNo++) {
+    console.log("LEVEL", levelNo)
     if (!hasStarted) {
         createStep(null)
         hasStarted = true;
