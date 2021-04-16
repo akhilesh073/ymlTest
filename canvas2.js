@@ -31,14 +31,17 @@ const jsonObject = {
     ]
 }
 const levels = 10;
-const branches = 3;
+const branches = 2;
 let leafNames = [];
 let newLeafNames = [];
 let hasStarted = false;
 
+let totalCount = 1;
+const limit = 2000;
 const createStep = (input, stopProp) => {
     const name = 'ct' + shortUuid.generate().replace(/-/g, '');
     if (!input || stopProp) {
+        if (totalCount >= limit) return;
         const step = {
             name: name,
             type: 'Bash',
@@ -63,6 +66,7 @@ const createStep = (input, stopProp) => {
             step.configuration.inputSteps = [{ name: input }];
         }
         jsonObject.pipelines[0].steps.push(step);
+        totalCount++;
     }
     if (!stopProp) {
         for (let branchNo = 1; branchNo <= branches; branchNo++) {
