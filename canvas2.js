@@ -31,7 +31,7 @@ const jsonObject = {
     ]
 }
 let track = 1;
-const createStep = (input) => {
+const createStep = (input, noTrack) => {
     if (track > 100) return;
     track++;
 
@@ -59,9 +59,13 @@ const createStep = (input) => {
     if (input) {
         step.configuration.inputSteps = [{ name: input }];
     }
-    createStep(name);
-    createStep(name);
-    createStep(name);
+    if (!noTrack) {
+        createStep(name, true);
+        createStep(name, true);
+        createStep(name, true);
+    } else {
+        
+    }
     jsonObject.pipelines[0].steps.push(step);
 }
 
