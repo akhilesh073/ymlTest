@@ -32,7 +32,7 @@ const jsonObject = {
 }
 let track = 1;
 const createStep = (input) => {
-    if (track > 10) return;
+    if (track > 100) return;
     track++;
 
     const name = 'ct' + shortUuid.generate().replace(/-/g, '');
@@ -59,6 +59,7 @@ const createStep = (input) => {
     if (input) {
         step.configuration.inputSteps = [{ name: input }];
     }
+    createStep(name);
     createStep(name);
     createStep(name);
     jsonObject.pipelines[0].steps.push(step);

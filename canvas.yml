@@ -13,115 +13,1195 @@ resources:
 pipelines:
   - name: canvasTest
     steps:
-      - name: ctj9nCQC4x5BDenTMtU4yAdY
+      - name: ct1zgqVR7yPE7WLFjVgnF2JY
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: ctu1d7easXQhdQCCTTmtkzVP
+            - name: ct2sRgkYEFHny6WHSBBp86C9
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctu1d7easXQhdQCCTTmtkzVP
+      - name: ct2sRgkYEFHny6WHSBBp86C9
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: ctkzbg6ZwNA2kZKTnfavgGhG
+            - name: ct4gXeCrogigvogQQuSjQ5Cp
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctkzbg6ZwNA2kZKTnfavgGhG
+      - name: ct4gXeCrogigvogQQuSjQ5Cp
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: cttFietvfT8jjkCG8gphGvE9
+            - name: ctckhUWV8jtw7epktcC8oZf2
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cttFietvfT8jjkCG8gphGvE9
+      - name: ctckhUWV8jtw7epktcC8oZf2
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: ctpX3sF72cgFBAbomQ9Nq8A4
+            - name: ctaGpL51hQc18M3gVUnzD1U3
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctpX3sF72cgFBAbomQ9Nq8A4
+      - name: ctaGpL51hQc18M3gVUnzD1U3
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: cth9DQUQyxbF1FJh6YTy9e7X
+            - name: ctqV17nwYhY5S3UKBSQC6wGo
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cth9DQUQyxbF1FJh6YTy9e7X
+      - name: ctqV17nwYhY5S3UKBSQC6wGo
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: ctgD7PsnfpMuEJkJ5uVJMkrB
+            - name: cteo6rqCTaMsJim5w1F4zT9h
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctgD7PsnfpMuEJkJ5uVJMkrB
+      - name: cteo6rqCTaMsJim5w1F4zT9h
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: ct5W7Pa7RKuczunkwdNv8y3s
+            - name: ct3gYpzZX6xfkYx4LxaxU58Y
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct5W7Pa7RKuczunkwdNv8y3s
+      - name: ct3gYpzZX6xfkYx4LxaxU58Y
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: cttG6Ba3mdsjKKX6UarBVyuZ
+            - name: cto1PxWVrCrdSDx5wypxpp7a
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cttG6Ba3mdsjKKX6UarBVyuZ
+      - name: cto1PxWVrCrdSDx5wypxpp7a
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: ctrR8hQFcx6fT21CxbUr96o7
+            - name: ctqoWxL4hHXm4FXpdAeTfWq3
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctrR8hQFcx6fT21CxbUr96o7
+      - name: ctqoWxL4hHXm4FXpdAeTfWq3
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctr1qk7nxG1JWP6ZkkD2ke5S
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctr1qk7nxG1JWP6ZkkD2ke5S
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctiWtfdE13VQfRoqGCSEPTdc
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctiWtfdE13VQfRoqGCSEPTdc
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctwg4YAJBB2KY2ZrtPDJUjSg
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctwg4YAJBB2KY2ZrtPDJUjSg
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctuSCe75mkup1QDm4a4qKFg6
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctuSCe75mkup1QDm4a4qKFg6
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctvXdYqxfMVEH7V4tWyLMboz
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctvXdYqxfMVEH7V4tWyLMboz
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctcjk4nc2eiUg1YUMA7n6kwM
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctcjk4nc2eiUg1YUMA7n6kwM
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctowKnELa3EaquTXGPrq1mq5
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctowKnELa3EaquTXGPrq1mq5
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctkkk4r7P2NxQZ53R8odLC1Q
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctkkk4r7P2NxQZ53R8odLC1Q
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctgvqRJQ9TCtXuUhNWH2o5PB
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctgvqRJQ9TCtXuUhNWH2o5PB
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct6xoRQpwZSoD9Z3nuh42NF9
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct6xoRQpwZSoD9Z3nuh42NF9
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctumfpyUY9rGq6Ua8UzpGQsv
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctumfpyUY9rGq6Ua8UzpGQsv
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctr1pkhikaMcpuMankXtAZ5V
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctr1pkhikaMcpuMankXtAZ5V
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctbhk6wpAbxSghEtWzb7Bd4T
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctbhk6wpAbxSghEtWzb7Bd4T
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct2x7vpVmZnSnaSM54m6EPKh
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct2x7vpVmZnSnaSM54m6EPKh
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctge1bNKCpLZdfkAMy49uZis
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctge1bNKCpLZdfkAMy49uZis
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctozcXbrEAv3GGMnXFSXzLkr
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctozcXbrEAv3GGMnXFSXzLkr
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: cteUgbbLfCY52ywbPLctbTQ5
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: cteUgbbLfCY52ywbPLctbTQ5
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctfnjBaKX6LEhTf7KQv8PJm2
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctfnjBaKX6LEhTf7KQv8PJm2
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: cttC4tKSXxfdHF1N2bQ2xtYo
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: cttC4tKSXxfdHF1N2bQ2xtYo
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctiBv1mwwmaBXS71w7JDx5h7
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctiBv1mwwmaBXS71w7JDx5h7
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct48h83r9v9uQ27iag8YuPTK
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct48h83r9v9uQ27iag8YuPTK
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctjXezQVB2YFy3vc3k8febuc
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctjXezQVB2YFy3vc3k8febuc
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct99LNUWX5BeLgwJ7CZ34bij
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct99LNUWX5BeLgwJ7CZ34bij
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctsSgqaGKLTrJ26kYjZqbeK8
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctsSgqaGKLTrJ26kYjZqbeK8
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctpDKmXHrPXtQn5djcyKnhZh
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctpDKmXHrPXtQn5djcyKnhZh
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctfpzBNbUYeGEmKQeGLTBVaY
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctfpzBNbUYeGEmKQeGLTBVaY
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctoyqVKNWGDaVsqatVnrpNXw
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctoyqVKNWGDaVsqatVnrpNXw
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctnZZDr3eNrN8VPMMQRxe9sr
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctnZZDr3eNrN8VPMMQRxe9sr
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctq8hi3E9yi7BUpiV3zos35e
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctq8hi3E9yi7BUpiV3zos35e
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctnt5huL8xijvbv9fi9y7mm1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctnt5huL8xijvbv9fi9y7mm1
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctcv18FUE5zgCfUoubC5rGDA
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctcv18FUE5zgCfUoubC5rGDA
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctfzJGwzUsp98Ku7xQU4aJBg
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctfzJGwzUsp98Ku7xQU4aJBg
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: cteYA6cbWBaC1KyatA5esken
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: cteYA6cbWBaC1KyatA5esken
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct6iu7T1JxjZw9jqpoaPAPmx
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct6iu7T1JxjZw9jqpoaPAPmx
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctjx3HgH6KYkX1hJcaJNcw3b
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctjx3HgH6KYkX1hJcaJNcw3b
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctipw85T5bnQNkZtTfaWfmVk
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctipw85T5bnQNkZtTfaWfmVk
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctg3gXDqdAjp6x2w4ZbC1iEp
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctg3gXDqdAjp6x2w4ZbC1iEp
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctmwBXcSLXvJGaYUyrFgsRk1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctmwBXcSLXvJGaYUyrFgsRk1
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctvUDFsSFkGLgb2H9WA6q58b
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctvUDFsSFkGLgb2H9WA6q58b
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctfqfa5uAA3rUfW3CefY973a
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctfqfa5uAA3rUfW3CefY973a
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctjrBgaLRQNg3bMiA6aUXbog
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctjrBgaLRQNg3bMiA6aUXbog
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct4NUSWK3DjTFuU3WC2TTBYy
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct4NUSWK3DjTFuU3WC2TTBYy
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct4Z6Hf187SGpbyHpYRUn6hj
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct4Z6Hf187SGpbyHpYRUn6hj
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctmiywuu19F1T426p4SjrEsv
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctmiywuu19F1T426p4SjrEsv
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctt2bY1z3Uoq8gdnikR6iF8j
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctt2bY1z3Uoq8gdnikR6iF8j
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: cttqfcWyTTcJR6j9pvNaYWq9
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: cttqfcWyTTcJR6j9pvNaYWq9
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctqL8x6vweFG6wgrAKwoN6XT
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctqL8x6vweFG6wgrAKwoN6XT
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctm9fANTbofVnorUYzPb64ic
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctm9fANTbofVnorUYzPb64ic
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct5QK3kid2deJwCKB15iX8Ag
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct5QK3kid2deJwCKB15iX8Ag
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctmuCv4Z83QfwnrWseV1UG4o
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctmuCv4Z83QfwnrWseV1UG4o
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctezAB3ehwynjagLWrM2KR7C
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctezAB3ehwynjagLWrM2KR7C
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct5V38WFgtk7EHZAL7idj8h4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct5V38WFgtk7EHZAL7idj8h4
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctcmFcttUL16E1f9AqWXRBMt
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctcmFcttUL16E1f9AqWXRBMt
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctmpd8qPzrNSG5LCxDvW7rxK
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctmpd8qPzrNSG5LCxDvW7rxK
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctv7jF1JnH23VcSVjreFHkzF
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctv7jF1JnH23VcSVjreFHkzF
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctvmk3fMiN734625zRPyXV4p
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctvmk3fMiN734625zRPyXV4p
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct9JwZMhAvSUHDBpwoAyUMk2
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct9JwZMhAvSUHDBpwoAyUMk2
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctw73aDZZsroo6G7CseP6Jnv
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctw73aDZZsroo6G7CseP6Jnv
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctbaKHWbTPsuivCtUyNMCeLr
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctbaKHWbTPsuivCtUyNMCeLr
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctrPoGddNJmn4zuG6s5vTWLs
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctrPoGddNJmn4zuG6s5vTWLs
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctwTVC3xYdCYdzWqq78e5NJv
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctwTVC3xYdCYdzWqq78e5NJv
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctn8JhMzEYVLiVo2UVKhdZoo
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctn8JhMzEYVLiVo2UVKhdZoo
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct1yAakckEXtiKZxi9cQpRvd
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct1yAakckEXtiKZxi9cQpRvd
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctbcHHMnjPr757AkmKXGTLdh
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctbcHHMnjPr757AkmKXGTLdh
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctrE5iLhvWHuiySs1AUZwWsN
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctrE5iLhvWHuiySs1AUZwWsN
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctqRQ7fdqAqkv51MrYLgDFkN
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctqRQ7fdqAqkv51MrYLgDFkN
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctdRjLsDemYWdGgZToQcgCJ4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctdRjLsDemYWdGgZToQcgCJ4
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctpWS9TZQk13jWzwwsaiGXdS
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctpWS9TZQk13jWzwwsaiGXdS
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctp974xvPJRopLi4MSXhkHzq
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctp974xvPJRopLi4MSXhkHzq
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: cta1RZSKvKRG4CgsegNXMYBc
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: cta1RZSKvKRG4CgsegNXMYBc
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctiyJmCun23U6guSgB8fqc74
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctiyJmCun23U6guSgB8fqc74
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct7UsvMWpAeKvUd7YiZHywj6
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct7UsvMWpAeKvUd7YiZHywj6
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctro22o9RUinsjREsBFepQHh
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctro22o9RUinsjREsBFepQHh
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctka946jTpbMQtTTfqqr5FF4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctka946jTpbMQtTTfqqr5FF4
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctxzkDhGa79gniwTQU9WugWZ
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctxzkDhGa79gniwTQU9WugWZ
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct9x5UP9237nbFVJ8fMqzBKY
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct9x5UP9237nbFVJ8fMqzBKY
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctp6zHF4nFWBTDaf8c17MsYG
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctp6zHF4nFWBTDaf8c17MsYG
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct3nqAszxMVPBHCsdwAEkBdu
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct3nqAszxMVPBHCsdwAEkBdu
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctgmtzRZ1ayqv7376E7AgPMa
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctgmtzRZ1ayqv7376E7AgPMa
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctuVJoKWeVBWJ7yWRToPeP8E
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctuVJoKWeVBWJ7yWRToPeP8E
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctkN1TSpCJqvQHfmg7M485ZU
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctkN1TSpCJqvQHfmg7M485ZU
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct46a259126aSxWUZxYuYZ2N
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct46a259126aSxWUZxYuYZ2N
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctoXKaZW12WWXXfyM3eSwjg4
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctoXKaZW12WWXXfyM3eSwjg4
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctakGo79zMYYnD716qkvxUJU
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctakGo79zMYYnD716qkvxUJU
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ct3c9u8MYc4CmbSR5fArKdn3
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ct3c9u8MYc4CmbSR5fArKdn3
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctuVRg8R4vYpVuT5QuimZwtN
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctuVRg8R4vYpVuT5QuimZwtN
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctwp8RzwVYmkDShyabxGNmAA
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctwp8RzwVYmkDShyabxGNmAA
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctiuK7He1Q95TgLge3FDXcX2
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctiuK7He1Q95TgLge3FDXcX2
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctkv2govdNhAugPLiknu7f49
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctkv2govdNhAugPLiknu7f49
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: ctjkdC1BEv4Y2UGmt1TaHNyK
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: ctjkdC1BEv4Y2UGmt1TaHNyK
         type: Bash
         configuration:
           inputResources:
