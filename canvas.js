@@ -29,9 +29,9 @@ const jsonObject = {
     ]
 }
 
-const levels = 5;
-const branches = 2;
-const steps = 1;
+const levels = 10;
+const branches = 4;
+const steps = 4;
 
 const rootStep = {
     name: `canvasTest_Root`,
