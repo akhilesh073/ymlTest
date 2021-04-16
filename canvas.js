@@ -29,8 +29,8 @@ const jsonObject = {
     ]
 }
 
-const levels = 10;
-const branches = 100;
+const levels = 20;
+const branches = 200;
 const steps = 1;
 
 const rootStep = {
