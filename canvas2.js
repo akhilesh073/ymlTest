@@ -31,10 +31,10 @@ const jsonObject = {
 }
 let track = 1;
 const createStep = (input) => {
-    if (track >= 100) return;
+    if (track >= 10) return;
     track++;
 
-    const name = uuid.v4()
+    const name = uuid.v4().replace(/-/g, '');
     const step = {
         name: name,
         type: 'Bash',
