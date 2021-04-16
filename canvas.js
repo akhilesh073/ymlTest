@@ -29,9 +29,9 @@ const jsonObject = {
     ]
 }
 
-const levels = 3;
-const branches = 2;
-const steps = 2;
+const levels = 10;
+const branches = 100;
+const steps = 1;
 
 const rootStep = {
     name: `canvasTest_Root`,
@@ -55,14 +55,14 @@ const rootStep = {
 };
 jsonObject.pipelines[0].steps.push(rootStep);
 const addLevel = (levelTrack) => {
-    console.log("Level", levelTrack)
+    // console.log("Level", levelTrack)
     for (let branchTrack = 1; branchTrack <= branches; branchTrack++) {
         addBranch(levelTrack, branchTrack)
     }
 }
 
 const addBranch = (levelTrack, branchTrack) => {
-    console.log("Branch", branchTrack)
+    // console.log("Branch", branchTrack)
     for (let stepTrack = 1; stepTrack <= steps; stepTrack++) {
         addStep(levelTrack, branchTrack, stepTrack)
     }
