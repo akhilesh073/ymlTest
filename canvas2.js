@@ -30,11 +30,11 @@ const jsonObject = {
         }
     ]
 }
-let track = 1;
-const createStep = (input, noTrack) => {
-    if (track > 100) return;
-    track++;
+const levels = 3;
+let leafNames = [];
+let hasStarted = false;
 
+const createStep = (input, noTrack) => {
     const name = 'ct' + shortUuid.generate().replace(/-/g, '');
     const step = {
         name: name,
@@ -59,17 +59,25 @@ const createStep = (input, noTrack) => {
     if (input) {
         step.configuration.inputSteps = [{ name: input }];
     }
-    if (!noTrack) {
-        createStep(name, true);
-        createStep(name, true);
-        createStep(name, true);
-    } else {
-        
-    }
     jsonObject.pipelines[0].steps.push(step);
+    if (!noTrack) {
+        for (let count = 1; count <= 3; count++) {
+            leafNames.push(createStep(name, true));
+        }
+    }
+    return name;
 }
 
-createStep();
+for (let levelNo = 1; levelNo <= levels; levelNo++) {
+    if (!hasStarted) {
+        createStep()
+    } else {
+        for (leafName of leafNames) {
+            createStep(leafName)
+        }
+    }
+    leafNames = [];
+}
 
 const doc = new YAML.Document();
 doc.contents = jsonObject;
