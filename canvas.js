@@ -29,9 +29,9 @@ const jsonObject = {
     ]
 }
 
-const levels = 10;
-const branches = 4;
-const steps = 4;
+const levels = 3;
+const branches = 2;
+const steps = 2;
 
 const rootStep = {
     name: `canvasTest_Root`,
@@ -89,19 +89,11 @@ const addStep = (levelTrack, branchTrack, stepTrack) => {
             ]
         }
     };
-    if (levelTrack > 1 && stepTrack === 1) {
-        step.configuration.inputSteps = [
-            {
-                name: `canvasTest_${levelTrack - 1}_${branchTrack}_${steps}`
-            }
-        ]
-    } else if (levelTrack > 1 && stepTrack > 1) {
-        step.configuration.inputSteps = [
-            {
-                name: `canvasTest_${levelTrack}_${branchTrack}_${stepTrack - 1}`
-            }
-        ]
-    }
+    step.configuration.inputSteps = [
+        {
+            name: `canvasTest_${levelTrack}_${branchTrack}_${stepTrack - 1}`
+        }
+    ]
     if (levelTrack === 1 && stepTrack === 1) {
         step.configuration.inputSteps = [
             {
