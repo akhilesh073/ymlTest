@@ -34,7 +34,7 @@ const createStep = (input) => {
     if (track >= 10) return;
     track++;
 
-    const name = uuid.v4().replace(/-/g, '');
+    const name = 'CanvasTest' + uuid.v4().replace(/-/g, '');
     const step = {
         name: name,
         type: 'Bash',

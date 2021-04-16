@@ -13,103 +13,103 @@ resources:
 pipelines:
   - name: canvasTest
     steps:
-      - name: ba3788099a9f4fb7b53c42c66866d47f
+      - name: CanvasTest1ae047bf065340379c11f550ea4a8f2c
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: 1453ad21619541db9dc13ae01584957c
+            - name: CanvasTest4878849fcf174994abc75178564a5bc2
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: 1453ad21619541db9dc13ae01584957c
+      - name: CanvasTest4878849fcf174994abc75178564a5bc2
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: 4fa2880c2d624d02808b0fa76f853e09
+            - name: CanvasTest476c9188e53249748fa83760239f322a
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: 4fa2880c2d624d02808b0fa76f853e09
+      - name: CanvasTest476c9188e53249748fa83760239f322a
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: daba792f3559414aa57bbb92bd702ff6
+            - name: CanvasTestc2f1e8b8ca894780ad4ca9c33ffe2c31
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: daba792f3559414aa57bbb92bd702ff6
+      - name: CanvasTestc2f1e8b8ca894780ad4ca9c33ffe2c31
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: 32cb424c445c4b7b94d2c1adfa77d829
+            - name: CanvasTestf2afc7126a6448d1a10db638c0e0da20
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: 32cb424c445c4b7b94d2c1adfa77d829
+      - name: CanvasTestf2afc7126a6448d1a10db638c0e0da20
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: ca82d727bc07461e870175f758409a15
+            - name: CanvasTeste6e3f5e16d92458795b45cfab35f2f23
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ca82d727bc07461e870175f758409a15
+      - name: CanvasTeste6e3f5e16d92458795b45cfab35f2f23
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: 4e18408c8c3a4972be1bb0d27933ffb7
+            - name: CanvasTest2a9ace70cbe94324ad6938eb6efab86f
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: 4e18408c8c3a4972be1bb0d27933ffb7
+      - name: CanvasTest2a9ace70cbe94324ad6938eb6efab86f
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: dff12147444948ca9748c75f92f572e2
+            - name: CanvasTest073bfa9eb6bd425b90c600a6ecf81b3d
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: dff12147444948ca9748c75f92f572e2
+      - name: CanvasTest073bfa9eb6bd425b90c600a6ecf81b3d
         type: Bash
         configuration:
           inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
           inputSteps:
-            - name: 8077419fafdd4e70b0d64584c8d056b3
+            - name: CanvasTest726869ddc4e3404694566cbe265a4149
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: 8077419fafdd4e70b0d64584c8d056b3
+      - name: CanvasTest726869ddc4e3404694566cbe265a4149
         type: Bash
         configuration:
           inputResources:
