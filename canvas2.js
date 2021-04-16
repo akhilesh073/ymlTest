@@ -30,8 +30,8 @@ const jsonObject = {
         }
     ]
 }
-const levels = 5;
-const branches = 3;
+const levels = 3;
+const branches = 2;
 let leafNames = [];
 let newLeafNames = [];
 let hasStarted = false;
