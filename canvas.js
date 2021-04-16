@@ -89,21 +89,26 @@ const addStep = (levelTrack, branchTrack, stepTrack) => {
             ]
         }
     };
-    step.configuration.inputSteps = [
-        {
-            name: `canvasTest_${levelTrack}_${branchTrack}_${stepTrack - 1}`
-        }
-    ]
     if (levelTrack === 1 && stepTrack === 1) {
         step.configuration.inputSteps = [
             {
                 name: `canvasTest_Root`
             }
         ]
-    }
-    console.log("STEP  ", step.name)
-    if (step.configuration.inputSteps) {
-        console.log("INPUT  ", step.configuration.inputSteps[0].name)
+    } else {
+        if (levelTrack > 1 && stepTrack === 1) {
+            step.configuration.inputSteps = [
+                {
+                    name: `canvasTest_${levelTrack - 1}_${branchTrack}_${steps}`
+                }
+            ]
+        } else {
+            step.configuration.inputSteps = [
+                {
+                    name: `canvasTest_${levelTrack}_${branchTrack}_${stepTrack - 1}`
+                }
+            ]
+        }
     }
     jsonObject.pipelines[0].steps.push(step);
 }
