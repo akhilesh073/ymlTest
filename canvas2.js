@@ -1,6 +1,7 @@
 const YAML = require('yaml');
 const fs = require('fs');
 const uuid  = require('uuid');
+const shortUuid  = require('short-uuid');
 
 const jsonObject = {
     resources: [
@@ -31,10 +32,10 @@ const jsonObject = {
 }
 let track = 1;
 const createStep = (input) => {
-    if (track >= 10) return;
+    if (track > 10) return;
     track++;
 
-    const name = 'CanvasTest' + uuid.v4().replace(/-/g, '');
+    const name = 'ct' + shortUuid.generate().replace(/-/g, '');
     const step = {
         name: name,
         type: 'Bash',

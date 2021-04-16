@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ChaitanyaVootla/ymlTest#readme",
   "dependencies": {
+    "short-uuid": "^4.1.0",
     "uuid": "^8.3.2",
     "yaml": "^1.10.2"
   }
