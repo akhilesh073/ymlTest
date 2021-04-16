@@ -96,7 +96,7 @@ const addStep = (levelTrack, branchTrack, stepTrack) => {
             }
         ]
     } else {
-        if (levelTrack > 1 && stepTrack === 1 && branchTrack === 1) {
+        if (levelTrack > 1 && stepTrack === 1) {
             step.configuration.inputSteps = [
                 {
                     name: `canvasTest_${levelTrack - 1}_${branchTrack}_${steps}`
