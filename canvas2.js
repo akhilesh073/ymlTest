@@ -30,61 +30,58 @@ const jsonObject = {
         }
     ]
 }
-const levels = 3;
+const levels = 2;
 let leafNames = [];
+let newLeafNames = [];
 let hasStarted = false;
 
 const createStep = (input, stopProp) => {
-    if (!input) console.log("********* NO INPUT")
     const name = 'ct' + shortUuid.generate().replace(/-/g, '');
-    const step = {
-        name: name,
-        type: 'Bash',
-        configuration: {
-            inputResources: [
-                {
-                    name: 'propertyCanvas'
-                },
-                {
-                    name: 'buildInfoTrigger'
-                },
-            ],
-        },
-        execution: {
-            onExecute: [
-                'sleep 1',
-                'echo "done"'
-            ]
+    if (!input || stopProp) {
+        const step = {
+            name: name,
+            type: 'Bash',
+            configuration: {
+                inputResources: [
+                    {
+                        name: 'propertyCanvas'
+                    },
+                    {
+                        name: 'buildInfoTrigger'
+                    },
+                ],
+            },
+            execution: {
+                onExecute: [
+                    'sleep 1',
+                    'echo "done"'
+                ]
+            }
+        };
+        if (input) {
+            step.configuration.inputSteps = [{ name: input }];
         }
-    };
-    console.log('-----')
-    if (input) {
-        step.configuration.inputSteps = [{ name: input }];
+        jsonObject.pipelines[0].steps.push(step);
     }
-    jsonObject.pipelines[0].steps.push(step);
     if (!stopProp) {
-        console.log('MAIN', name)
-        for (let count = 1; count <= 3; count++) {
-            const leafName = createStep(name, true);
-            console.log("LEAF", leafName);
-            leafNames.push(leafName);
+        for (let branchNo = 1; branchNo <= 2; branchNo++) {
+            const leafName = createStep(input || name, true);
+            newLeafNames.push(leafName);
         }
     }
     return name;
 }
 
 for (let levelNo = 1; levelNo <= levels; levelNo++) {
-    console.log("LEVEL", levelNo)
     if (!hasStarted) {
-        createStep(null)
+        createStep(null, false)
         hasStarted = true;
     } else {
-        console.log(leafNames);
+        leafNames = newLeafNames.map(name => name);
         for (leafName of leafNames) {
-            createStep(leafName)
+            createStep(leafName, false)
         }
     }
-    leafNames = [];
 }
 
 const doc = new YAML.Document();
