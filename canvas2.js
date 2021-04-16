@@ -30,8 +30,8 @@ const jsonObject = {
         }
     ]
 }
-const levels = 3;
-const branches = 2;
+const levels = 10;
+const branches = 3;
 let leafNames = [];
 let newLeafNames = [];
 let hasStarted = false;
@@ -79,6 +79,7 @@ for (let levelNo = 1; levelNo <= levels; levelNo++) {
         hasStarted = true;
     } else {
         leafNames = newLeafNames.map(name => name);
+        newLeafNames = [];
         for (leafName of leafNames) {
             createStep(leafName, false)
         }
