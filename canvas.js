@@ -45,12 +45,12 @@ const rootStep = {
                 name: 'buildInfoTrigger'
             },
         ],
-        execution: {
-            onExecute: [
-                'sleep 1',
-                'echo "done"'
-            ]
-        }
+    },
+    execution: {
+        onExecute: [
+            'sleep 1',
+            'echo "done"'
+        ]
     }
 };
 jsonObject.pipelines[0].steps.push(rootStep);
@@ -81,12 +81,12 @@ const addStep = (levelTrack, branchTrack, stepTrack) => {
                     name: 'buildInfoTrigger'
                 },
             ],
-            execution: {
-                onExecute: [
-                    'sleep 1',
-                    'echo "done"'
-                ]
-            }
+        },
+        execution: {
+            onExecute: [
+                'sleep 1',
+                'echo "done"'
+            ]
         }
     };
     if (levelTrack > 1 && stepTrack === 1) {
