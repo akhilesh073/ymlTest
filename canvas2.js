@@ -30,7 +30,8 @@ const jsonObject = {
         }
     ]
 }
-const levels = 2;
+const levels = 5;
+const branches = 3;
 let leafNames = [];
 let newLeafNames = [];
 let hasStarted = false;
@@ -64,7 +65,7 @@ const createStep = (input, stopProp) => {
         jsonObject.pipelines[0].steps.push(step);
     }
     if (!stopProp) {
-        for (let branchNo = 1; branchNo <= 2; branchNo++) {
+        for (let branchNo = 1; branchNo <= branches; branchNo++) {
             const leafName = createStep(input || name, true);
             newLeafNames.push(leafName);
         }
