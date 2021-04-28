@@ -10,7 +10,7 @@ let newLeafNames = [];
 let hasStarted = false;
 
 let totalCount = 1;
-const limit = 100;
+const limit = 500;
 
 const jsonObject = {
     resources: [
@@ -41,11 +41,11 @@ const jsonObject = {
 }
 
 const createStep = (input, stopProp) => {
-    const name = 'ct' + shortUuid.generate().replace(/-/g, '');
+    const name = 'ct' + shortUuid.generate().replace(/-/g, '') + limit;
     if (!input || stopProp) {
         if (totalCount >= limit) return;
         const step = {
-            name: name + limit,
+            name: name,
             type: 'Bash',
             configuration: {
                 inputResources: [
