@@ -29,8 +29,8 @@ const jsonObject = {
     ]
 }
 
-const levels = 50;
-const branches = 20;
+const levels = 20;
+const branches = 25;
 const steps = 1;
 
 const rootStep = {
@@ -121,4 +121,4 @@ for (levelTrack = 1; levelTrack <= levels; levelTrack++) {
 const doc = new YAML.Document();
 doc.contents = jsonObject;
 
-fs.writeFileSync('./canvas.yml', doc.toString());
+fs.writeFileSync('./canvas500.yml', doc.toString());

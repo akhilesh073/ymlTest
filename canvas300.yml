@@ -1,3600 +1,3624 @@
 resources:
-  - name: propertyCanvas300
+  - name: propertyCanvas
     type: PropertyBag
     configuration:
       key1: value1
       key2: value2
-  - name: buildInfoTrigger300
+  - name: buildInfoTrigger
     type: BuildInfo
     configuration:
       sourceArtifactory: art
       buildName: backend_build
       buildNumber: 1
 pipelines:
-  - name: canvasTest300
+  - name: canvasTest
     steps:
-      - name: ctcaFC9sZrveb441w8AW7Tsd300
+      - name: canvasTest_Root
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct92X27NXend1NUJF8kMutY6300
+      - name: canvasTest_1_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctcaFC9sZrveb441w8AW7Tsd300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctnJboqhw2bXiAJiSGuG1e41300
+      - name: canvasTest_1_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctcaFC9sZrveb441w8AW7Tsd300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctuzQQpoiaghwA2vRJiKzkkx300
+      - name: canvasTest_1_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct92X27NXend1NUJF8kMutY6300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctwciWKNDV864Wux41R8Ejx9300
+      - name: canvasTest_1_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct92X27NXend1NUJF8kMutY6300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cthVkhArpWh4KFiastYnrTUo300
+      - name: canvasTest_1_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctnJboqhw2bXiAJiSGuG1e41300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctiTSHaQ5Jvuctga3MrYZ3mH300
+      - name: canvasTest_1_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctnJboqhw2bXiAJiSGuG1e41300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctv7KLFW837bZs6p7v4RBN7r300
+      - name: canvasTest_1_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctuzQQpoiaghwA2vRJiKzkkx300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctmNFMjfZDSmAdY3CbGXafVt300
+      - name: canvasTest_1_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctuzQQpoiaghwA2vRJiKzkkx300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct3D5kXbfU9Vh57b9CnG4V9T300
+      - name: canvasTest_1_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctwciWKNDV864Wux41R8Ejx9300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctqeEB3TCGyzrztGu142ctk4300
+      - name: canvasTest_1_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctwciWKNDV864Wux41R8Ejx9300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct4BQD5kHxkDc8eeQ3UmCZ4W300
+      - name: canvasTest_1_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cthVkhArpWh4KFiastYnrTUo300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cthPVfHbQcQmBo7YCJjtFpbN300
+      - name: canvasTest_1_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cthVkhArpWh4KFiastYnrTUo300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct4WYeP579RKDkeAbFwapbkB300
+      - name: canvasTest_1_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctiTSHaQ5Jvuctga3MrYZ3mH300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctnqWuAJP5t4bXnoNwMygiRo300
+      - name: canvasTest_1_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctiTSHaQ5Jvuctga3MrYZ3mH300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctupNYw9Zp6rTvvc9t6K5Tm9300
+      - name: canvasTest_1_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctv7KLFW837bZs6p7v4RBN7r300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctofLzRc2Qez6Ztic25aw16b300
+      - name: canvasTest_1_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctv7KLFW837bZs6p7v4RBN7r300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctjPpqVHjTW867Dx4NHYj1f2300
+      - name: canvasTest_1_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctmNFMjfZDSmAdY3CbGXafVt300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctuFFk7wKAtLgYKuSiy22Vwg300
+      - name: canvasTest_1_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctmNFMjfZDSmAdY3CbGXafVt300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctvNniSN1ZBKas3oyEcV679e300
+      - name: canvasTest_1_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct3D5kXbfU9Vh57b9CnG4V9T300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct1px52LVutqC8kVdoh8SgV1300
+      - name: canvasTest_1_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct3D5kXbfU9Vh57b9CnG4V9T300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct76Pj2w7eo6kf2zAFFyYtkx300
+      - name: canvasTest_1_21_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctqeEB3TCGyzrztGu142ctk4300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cteKzknxprA1711axC9U4ZXw300
+      - name: canvasTest_1_22_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctqeEB3TCGyzrztGu142ctk4300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct61xH8Gs5bP3Eoak5s7WT7V300
+      - name: canvasTest_1_23_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct4BQD5kHxkDc8eeQ3UmCZ4W300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctpuigf9dED5q1Ezg6d1gD9m300
+      - name: canvasTest_1_24_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct4BQD5kHxkDc8eeQ3UmCZ4W300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctuQS768rrj4Q29o49Dh2gUy300
+      - name: canvasTest_1_25_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cthPVfHbQcQmBo7YCJjtFpbN300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctouP3jAmARh7FWPE3fb4Pwy300
+      - name: canvasTest_1_26_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cthPVfHbQcQmBo7YCJjtFpbN300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctaM7uZevRPp7m4TNaLGZgkj300
+      - name: canvasTest_1_27_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct4WYeP579RKDkeAbFwapbkB300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctuKruHoszDD4onwR7ccoNCh300
+      - name: canvasTest_1_28_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct4WYeP579RKDkeAbFwapbkB300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctmEJNidA6UpB7EtbwKvXWzW300
+      - name: canvasTest_1_29_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctnqWuAJP5t4bXnoNwMygiRo300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct284Z2gu6hDktukmNraJ2vv300
+      - name: canvasTest_1_30_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctnqWuAJP5t4bXnoNwMygiRo300
+            - name: canvasTest_Root
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctbphCoMh6mKiEUP1z3awGfr300
+      - name: canvasTest_2_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctupNYw9Zp6rTvvc9t6K5Tm9300
+            - name: canvasTest_1_1_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctoZ2inCkJezXdoGyw98i4E6300
+      - name: canvasTest_2_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctupNYw9Zp6rTvvc9t6K5Tm9300
+            - name: canvasTest_1_2_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctpRYd8avEDnHVrAtuV7WKmx300
+      - name: canvasTest_2_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctofLzRc2Qez6Ztic25aw16b300
+            - name: canvasTest_1_3_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct3zL9ofXKxyuvfjmjg2fpLU300
+      - name: canvasTest_2_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctofLzRc2Qez6Ztic25aw16b300
+            - name: canvasTest_1_4_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctdFLrefKT96bK79JBqEVWbj300
+      - name: canvasTest_2_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctjPpqVHjTW867Dx4NHYj1f2300
+            - name: canvasTest_1_5_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctvZ9pdUHkNxCF5hDhiemcgE300
+      - name: canvasTest_2_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctjPpqVHjTW867Dx4NHYj1f2300
+            - name: canvasTest_1_6_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct9J1NK8DYSnrmvm3x3DEgfR300
+      - name: canvasTest_2_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctuFFk7wKAtLgYKuSiy22Vwg300
+            - name: canvasTest_1_7_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctwcdBscnKaqwoNePd1vi8jj300
+      - name: canvasTest_2_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctuFFk7wKAtLgYKuSiy22Vwg300
+            - name: canvasTest_1_8_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct8ebTQXeiy4hw7NC5QLegL5300
+      - name: canvasTest_2_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctvNniSN1ZBKas3oyEcV679e300
+            - name: canvasTest_1_9_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctcFFbeEGNA3HqRU4ors3nyh300
+      - name: canvasTest_2_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctvNniSN1ZBKas3oyEcV679e300
+            - name: canvasTest_1_10_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctr3yPE7ZHoKjb4URfaQKTqW300
+      - name: canvasTest_2_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct1px52LVutqC8kVdoh8SgV1300
+            - name: canvasTest_1_11_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctsPSFixriMuqgRC9jQqy25c300
+      - name: canvasTest_2_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct1px52LVutqC8kVdoh8SgV1300
+            - name: canvasTest_1_12_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct8iE4LREw18MwLLvf2FbyV3300
+      - name: canvasTest_2_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct76Pj2w7eo6kf2zAFFyYtkx300
+            - name: canvasTest_1_13_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctaSeYHp2TriVfPyX5XhQQ39300
+      - name: canvasTest_2_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct76Pj2w7eo6kf2zAFFyYtkx300
+            - name: canvasTest_1_14_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct1Q1bdEYDn58rGckXrcySbE300
+      - name: canvasTest_2_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cteKzknxprA1711axC9U4ZXw300
+            - name: canvasTest_1_15_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctrEWMr9eNi7fMYjbNRJzdcH300
+      - name: canvasTest_2_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cteKzknxprA1711axC9U4ZXw300
+            - name: canvasTest_1_16_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctmZy1syC1tMCPjvvqLUgPxo300
+      - name: canvasTest_2_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct61xH8Gs5bP3Eoak5s7WT7V300
+            - name: canvasTest_1_17_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctvYfD9GNxa79TFhegwCFMTK300
+      - name: canvasTest_2_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct61xH8Gs5bP3Eoak5s7WT7V300
+            - name: canvasTest_1_18_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct469Vf6NVFkNcTRo1Nptw8Z300
+      - name: canvasTest_2_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctpuigf9dED5q1Ezg6d1gD9m300
+            - name: canvasTest_1_19_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct2TVYajardxhDz63kpJQNyz300
+      - name: canvasTest_2_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctpuigf9dED5q1Ezg6d1gD9m300
+            - name: canvasTest_1_20_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctoAXxMxYr916PgRokMoiR2a300
+      - name: canvasTest_2_21_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctuQS768rrj4Q29o49Dh2gUy300
+            - name: canvasTest_1_21_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct4zWAD97EVP599ZGCQMram1300
+      - name: canvasTest_2_22_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctuQS768rrj4Q29o49Dh2gUy300
+            - name: canvasTest_1_22_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct5KcQmcfygUj3WUk8SvEsT7300
+      - name: canvasTest_2_23_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctouP3jAmARh7FWPE3fb4Pwy300
+            - name: canvasTest_1_23_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cto3qgRzMDHB7uZ4D9x9a89Q300
+      - name: canvasTest_2_24_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctouP3jAmARh7FWPE3fb4Pwy300
+            - name: canvasTest_1_24_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct8tuArMUZBZMdD1eDjaFzs3300
+      - name: canvasTest_2_25_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctaM7uZevRPp7m4TNaLGZgkj300
+            - name: canvasTest_1_25_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctrHi3vEwigAKdaEbp6947v8300
+      - name: canvasTest_2_26_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctaM7uZevRPp7m4TNaLGZgkj300
+            - name: canvasTest_1_26_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctftP5nL2eMPmTDFQavdNcsW300
+      - name: canvasTest_2_27_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctuKruHoszDD4onwR7ccoNCh300
+            - name: canvasTest_1_27_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctkXbeQCA5eVPrFXm87u5GRR300
+      - name: canvasTest_2_28_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctuKruHoszDD4onwR7ccoNCh300
+            - name: canvasTest_1_28_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctnbsXSNnBgXBVBA8vabx21w300
+      - name: canvasTest_2_29_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctmEJNidA6UpB7EtbwKvXWzW300
+            - name: canvasTest_1_29_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctsxvcBDPKHYy3HChjG836ea300
+      - name: canvasTest_2_30_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctmEJNidA6UpB7EtbwKvXWzW300
+            - name: canvasTest_1_30_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct2dcsr59Z2D6EyYHuao1PmM300
+      - name: canvasTest_3_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct284Z2gu6hDktukmNraJ2vv300
+            - name: canvasTest_2_1_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct8TA5a5LStT7eD8bFo9Jhdb300
+      - name: canvasTest_3_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct284Z2gu6hDktukmNraJ2vv300
+            - name: canvasTest_2_2_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctmBMhYRSdB56URrh3P7Tjn6300
+      - name: canvasTest_3_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctbphCoMh6mKiEUP1z3awGfr300
+            - name: canvasTest_2_3_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctfonKK9Gpq8vz5J8qyEBVRX300
+      - name: canvasTest_3_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctbphCoMh6mKiEUP1z3awGfr300
+            - name: canvasTest_2_4_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct8MmsebwYnLwT7u2aCvuQfB300
+      - name: canvasTest_3_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctoZ2inCkJezXdoGyw98i4E6300
+            - name: canvasTest_2_5_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctx7DNywfw3CEFzWPHHvn7Ub300
+      - name: canvasTest_3_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctoZ2inCkJezXdoGyw98i4E6300
+            - name: canvasTest_2_6_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cthMRU7xVdXdhuLnAap8CX9c300
+      - name: canvasTest_3_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctpRYd8avEDnHVrAtuV7WKmx300
+            - name: canvasTest_2_7_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctiD6BVLVhq5PFJ3Jf9jtZsR300
+      - name: canvasTest_3_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctpRYd8avEDnHVrAtuV7WKmx300
+            - name: canvasTest_2_8_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cttPADe45gJuFb993L7siM2a300
+      - name: canvasTest_3_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct3zL9ofXKxyuvfjmjg2fpLU300
+            - name: canvasTest_2_9_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctbnxtC6sVej6Z8KqnS5Pen1300
+      - name: canvasTest_3_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct3zL9ofXKxyuvfjmjg2fpLU300
+            - name: canvasTest_2_10_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctvGrc1jB3USKu4WPDk6jZru300
+      - name: canvasTest_3_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctdFLrefKT96bK79JBqEVWbj300
+            - name: canvasTest_2_11_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct6TCEc7vC38feNFiqUc2Wqp300
+      - name: canvasTest_3_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctdFLrefKT96bK79JBqEVWbj300
+            - name: canvasTest_2_12_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctpKztq5x4fcvoceN5c3qBnY300
+      - name: canvasTest_3_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctvZ9pdUHkNxCF5hDhiemcgE300
+            - name: canvasTest_2_13_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cteLXeJGvWN5G1REeh7T2SEJ300
+      - name: canvasTest_3_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctvZ9pdUHkNxCF5hDhiemcgE300
+            - name: canvasTest_2_14_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctvHLaZswmFKzeEGCH8x4iu3300
+      - name: canvasTest_3_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct9J1NK8DYSnrmvm3x3DEgfR300
+            - name: canvasTest_2_15_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctmPKBjk81Quo3M36jYbcZpZ300
+      - name: canvasTest_3_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct9J1NK8DYSnrmvm3x3DEgfR300
+            - name: canvasTest_2_16_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctuCwcWvqaWGWuW5XNsv6xnW300
+      - name: canvasTest_3_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctwcdBscnKaqwoNePd1vi8jj300
+            - name: canvasTest_2_17_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctb5KnqRZoLsEmJ6fRM7EF5t300
+      - name: canvasTest_3_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctwcdBscnKaqwoNePd1vi8jj300
+            - name: canvasTest_2_18_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cts18hx8dbhmR5nffUCGbqX4300
+      - name: canvasTest_3_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8ebTQXeiy4hw7NC5QLegL5300
+            - name: canvasTest_2_19_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct4g3r1PEkeRVq33M9eNaB1M300
+      - name: canvasTest_3_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8ebTQXeiy4hw7NC5QLegL5300
+            - name: canvasTest_2_20_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctgJKLLNFTXyKvDxseaswDLG300
+      - name: canvasTest_3_21_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctcFFbeEGNA3HqRU4ors3nyh300
+            - name: canvasTest_2_21_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct5dVMn8m3v8n6jVtnh3eogD300
+      - name: canvasTest_3_22_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctcFFbeEGNA3HqRU4ors3nyh300
+            - name: canvasTest_2_22_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctbJA3wChaPHrjVwvdXCKCgm300
+      - name: canvasTest_3_23_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctr3yPE7ZHoKjb4URfaQKTqW300
+            - name: canvasTest_2_23_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctpATDPq1yidND9nAa83XGUT300
+      - name: canvasTest_3_24_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctr3yPE7ZHoKjb4URfaQKTqW300
+            - name: canvasTest_2_24_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct8yPjqp3T4pHwPkTpuopqR5300
+      - name: canvasTest_3_25_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctsPSFixriMuqgRC9jQqy25c300
+            - name: canvasTest_2_25_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct6ifp2zKxc2QPVzJS1tN3Jy300
+      - name: canvasTest_3_26_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctsPSFixriMuqgRC9jQqy25c300
+            - name: canvasTest_2_26_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cttSw23sXkqguicUnB7AysLS300
+      - name: canvasTest_3_27_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8iE4LREw18MwLLvf2FbyV3300
+            - name: canvasTest_2_27_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctu2sVXZe5EHq2Haq2am7dXP300
+      - name: canvasTest_3_28_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8iE4LREw18MwLLvf2FbyV3300
+            - name: canvasTest_2_28_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctnEWW5usKfsM8cVbykphPpP300
+      - name: canvasTest_3_29_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctaSeYHp2TriVfPyX5XhQQ39300
+            - name: canvasTest_2_29_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctihyBpgDrMiQ7gvdTcSV9M2300
+      - name: canvasTest_3_30_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctaSeYHp2TriVfPyX5XhQQ39300
+            - name: canvasTest_2_30_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cthbPkdLwnNLWPfuWgMtZsY4300
+      - name: canvasTest_4_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct1Q1bdEYDn58rGckXrcySbE300
+            - name: canvasTest_3_1_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctxaq5TEVhoJCe4ioQaPXyXL300
+      - name: canvasTest_4_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct1Q1bdEYDn58rGckXrcySbE300
+            - name: canvasTest_3_2_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct1f3LwscTWSFSLeE4cMkJvh300
+      - name: canvasTest_4_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctrEWMr9eNi7fMYjbNRJzdcH300
+            - name: canvasTest_3_3_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct4R88p1nPEQ5eFj76Rc9Lr9300
+      - name: canvasTest_4_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctrEWMr9eNi7fMYjbNRJzdcH300
+            - name: canvasTest_3_4_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctaUJLQY7fXJ1DU5BU7BcRrA300
+      - name: canvasTest_4_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctmZy1syC1tMCPjvvqLUgPxo300
+            - name: canvasTest_3_5_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctfJJ4hCVQUYMwx97tjHqjWE300
+      - name: canvasTest_4_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctmZy1syC1tMCPjvvqLUgPxo300
+            - name: canvasTest_3_6_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct2UWAyeWkTeJSHMBKZ9Ya7z300
+      - name: canvasTest_4_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctvYfD9GNxa79TFhegwCFMTK300
+            - name: canvasTest_3_7_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct6evMh4LLQQuaJfsgCimcdG300
+      - name: canvasTest_4_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctvYfD9GNxa79TFhegwCFMTK300
+            - name: canvasTest_3_8_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctrEMsdxWVTEGjdc2Bj3SbFZ300
+      - name: canvasTest_4_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct469Vf6NVFkNcTRo1Nptw8Z300
+            - name: canvasTest_3_9_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct1evG3VcfUgXPG12Dwp6w7b300
+      - name: canvasTest_4_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct469Vf6NVFkNcTRo1Nptw8Z300
+            - name: canvasTest_3_10_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctbSXuAykYH5ZSiddT6v8KkT300
+      - name: canvasTest_4_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct2TVYajardxhDz63kpJQNyz300
+            - name: canvasTest_3_11_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cttoSmyGt7wGY1vzsKmFWUNs300
+      - name: canvasTest_4_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct2TVYajardxhDz63kpJQNyz300
+            - name: canvasTest_3_12_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctspMjWeEBi5Fj78QsrfQUde300
+      - name: canvasTest_4_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctoAXxMxYr916PgRokMoiR2a300
+            - name: canvasTest_3_13_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct9EFrq9vdhxyPoxGcVoYsVa300
+      - name: canvasTest_4_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctoAXxMxYr916PgRokMoiR2a300
+            - name: canvasTest_3_14_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctfCZTm5X2zMzSQ4rQou7KTg300
+      - name: canvasTest_4_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct4zWAD97EVP599ZGCQMram1300
+            - name: canvasTest_3_15_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctsUvX4byfgPwh2PSgVQzDvZ300
+      - name: canvasTest_4_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct4zWAD97EVP599ZGCQMram1300
+            - name: canvasTest_3_16_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctfEio98cM7zxzgPdJrV7mUW300
+      - name: canvasTest_4_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct5KcQmcfygUj3WUk8SvEsT7300
+            - name: canvasTest_3_17_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct4qfPr7uvKGcewWpDmEVXR7300
+      - name: canvasTest_4_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct5KcQmcfygUj3WUk8SvEsT7300
+            - name: canvasTest_3_18_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctqqs7RwGknsGvarWVKBst6v300
+      - name: canvasTest_4_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cto3qgRzMDHB7uZ4D9x9a89Q300
+            - name: canvasTest_3_19_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctw9LyJZrpyhKzybpw71uvZX300
+      - name: canvasTest_4_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cto3qgRzMDHB7uZ4D9x9a89Q300
+            - name: canvasTest_3_20_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct7SUq78VZpProT1AWN5k7US300
+      - name: canvasTest_4_21_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8tuArMUZBZMdD1eDjaFzs3300
+            - name: canvasTest_3_21_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctsUDGmzuYpJaqhPswoDVipw300
+      - name: canvasTest_4_22_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8tuArMUZBZMdD1eDjaFzs3300
+            - name: canvasTest_3_22_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct3kvDmoy1oMZzkJwMeMx6Qn300
+      - name: canvasTest_4_23_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctrHi3vEwigAKdaEbp6947v8300
+            - name: canvasTest_3_23_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctxs12tRudXF8t29974PoNUK300
+      - name: canvasTest_4_24_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctrHi3vEwigAKdaEbp6947v8300
+            - name: canvasTest_3_24_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct9QDieFFfwiJ8MhvuhpgPYz300
+      - name: canvasTest_4_25_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctftP5nL2eMPmTDFQavdNcsW300
+            - name: canvasTest_3_25_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct5ugpnYDrDpaK4VSrtTGY6H300
+      - name: canvasTest_4_26_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctftP5nL2eMPmTDFQavdNcsW300
+            - name: canvasTest_3_26_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct5rxSmGP5n4UmFcNUvdsGP8300
+      - name: canvasTest_4_27_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctkXbeQCA5eVPrFXm87u5GRR300
+            - name: canvasTest_3_27_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctrDWs8yUdQpBqNuUTU1PhFB300
+      - name: canvasTest_4_28_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctkXbeQCA5eVPrFXm87u5GRR300
+            - name: canvasTest_3_28_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct87UoM4wz75AEjx4fXzsCps300
+      - name: canvasTest_4_29_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctnbsXSNnBgXBVBA8vabx21w300
+            - name: canvasTest_3_29_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cth3xnPta58EP1qnTke1tKMr300
+      - name: canvasTest_4_30_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctnbsXSNnBgXBVBA8vabx21w300
+            - name: canvasTest_3_30_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctektD2Cq9ZUkxh55vnW2Umn300
+      - name: canvasTest_5_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctsxvcBDPKHYy3HChjG836ea300
+            - name: canvasTest_4_1_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cttHmhkoqjttuBmyvpZTAzbE300
+      - name: canvasTest_5_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctsxvcBDPKHYy3HChjG836ea300
+            - name: canvasTest_4_2_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct8m8K44neKqDmzXqgvXxS8G300
+      - name: canvasTest_5_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct2dcsr59Z2D6EyYHuao1PmM300
+            - name: canvasTest_4_3_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct8moC3iPbKD4wGQenM945pE300
+      - name: canvasTest_5_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct2dcsr59Z2D6EyYHuao1PmM300
+            - name: canvasTest_4_4_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctsmAx3Qqb8HFt4BZiwRJCMF300
+      - name: canvasTest_5_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8TA5a5LStT7eD8bFo9Jhdb300
+            - name: canvasTest_4_5_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct9LCmUXVg7uzJ6NRGfmus1x300
+      - name: canvasTest_5_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8TA5a5LStT7eD8bFo9Jhdb300
+            - name: canvasTest_4_6_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctfFMKsgWttr6B7kN4w5SyeJ300
+      - name: canvasTest_5_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctmBMhYRSdB56URrh3P7Tjn6300
+            - name: canvasTest_4_7_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct58qKAUocxZDqsZyA4Mfmeg300
+      - name: canvasTest_5_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctmBMhYRSdB56URrh3P7Tjn6300
+            - name: canvasTest_4_8_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctqgEdHmtnAnaeX4oekFDDed300
+      - name: canvasTest_5_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctfonKK9Gpq8vz5J8qyEBVRX300
+            - name: canvasTest_4_9_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctqjcPAN7heoBav7bve8eHFy300
+      - name: canvasTest_5_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctfonKK9Gpq8vz5J8qyEBVRX300
+            - name: canvasTest_4_10_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctrTMEowGPaJu7F5FiqejY4b300
+      - name: canvasTest_5_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8MmsebwYnLwT7u2aCvuQfB300
+            - name: canvasTest_4_11_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctk5Sf9ie8ASwMgH5vJqn9gh300
+      - name: canvasTest_5_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8MmsebwYnLwT7u2aCvuQfB300
+            - name: canvasTest_4_12_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctmiV9NZ188QtwRRcGc6tb83300
+      - name: canvasTest_5_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctx7DNywfw3CEFzWPHHvn7Ub300
+            - name: canvasTest_4_13_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctcp1xtXSYaAqJdaNiqtx9tG300
+      - name: canvasTest_5_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctx7DNywfw3CEFzWPHHvn7Ub300
+            - name: canvasTest_4_14_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctcBjd1rb1CryEK9oU1w7mW9300
+      - name: canvasTest_5_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cthMRU7xVdXdhuLnAap8CX9c300
+            - name: canvasTest_4_15_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctc8BKcssHLUPFRMzrXnnDaT300
+      - name: canvasTest_5_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cthMRU7xVdXdhuLnAap8CX9c300
+            - name: canvasTest_4_16_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cttFy3LD1Dk8x2Dd1D9UBg2Y300
+      - name: canvasTest_5_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctiD6BVLVhq5PFJ3Jf9jtZsR300
+            - name: canvasTest_4_17_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctwGCS5DeBoMG3b3TEJigAAi300
+      - name: canvasTest_5_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctiD6BVLVhq5PFJ3Jf9jtZsR300
+            - name: canvasTest_4_18_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cttNySBfpYRXZQkzZsUaCJrQ300
+      - name: canvasTest_5_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cttPADe45gJuFb993L7siM2a300
+            - name: canvasTest_4_19_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct2zgKQuPKYpLkVAZDjdYebX300
+      - name: canvasTest_5_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cttPADe45gJuFb993L7siM2a300
+            - name: canvasTest_4_20_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct6gSBhYpimENsm7KUsGKXyk300
+      - name: canvasTest_5_21_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctbnxtC6sVej6Z8KqnS5Pen1300
+            - name: canvasTest_4_21_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctkoEBFGUqaLrk5jX5Mt8LB5300
+      - name: canvasTest_5_22_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctbnxtC6sVej6Z8KqnS5Pen1300
+            - name: canvasTest_4_22_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctiodrkWUnJ7wm2ZPirpb7uE300
+      - name: canvasTest_5_23_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctvGrc1jB3USKu4WPDk6jZru300
+            - name: canvasTest_4_23_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctgfZhXaZxGhodGPnxMR4cKS300
+      - name: canvasTest_5_24_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctvGrc1jB3USKu4WPDk6jZru300
+            - name: canvasTest_4_24_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctb9Pzmp8jwFmaDzdJAW9qEM300
+      - name: canvasTest_5_25_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct6TCEc7vC38feNFiqUc2Wqp300
+            - name: canvasTest_4_25_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctpRSNRboi6VLsyLc9eJzwrE300
+      - name: canvasTest_5_26_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct6TCEc7vC38feNFiqUc2Wqp300
+            - name: canvasTest_4_26_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctc2FNSG4GaqeDNF43cqMysF300
+      - name: canvasTest_5_27_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctpKztq5x4fcvoceN5c3qBnY300
+            - name: canvasTest_4_27_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctonqQxGZ6gTJtQKX6oTJAS9300
+      - name: canvasTest_5_28_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctpKztq5x4fcvoceN5c3qBnY300
+            - name: canvasTest_4_28_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctqMyWT6yFNU9ihxTwQeyrVt300
+      - name: canvasTest_5_29_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cteLXeJGvWN5G1REeh7T2SEJ300
+            - name: canvasTest_4_29_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctbaKkx6ppvFuwTBrmhU5hPG300
+      - name: canvasTest_5_30_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cteLXeJGvWN5G1REeh7T2SEJ300
+            - name: canvasTest_4_30_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctvk59jBDb4Nz3Bmpyb7Q5r8300
+      - name: canvasTest_6_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctvHLaZswmFKzeEGCH8x4iu3300
+            - name: canvasTest_5_1_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctjYRZ9nfsXwG9UuEU2xDZ9m300
+      - name: canvasTest_6_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctvHLaZswmFKzeEGCH8x4iu3300
+            - name: canvasTest_5_2_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctwsnjAqKGEiMTayau5onnoU300
+      - name: canvasTest_6_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctmPKBjk81Quo3M36jYbcZpZ300
+            - name: canvasTest_5_3_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct2pE3CRnevpZRm2weZpajFY300
+      - name: canvasTest_6_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctmPKBjk81Quo3M36jYbcZpZ300
+            - name: canvasTest_5_4_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctoAT521BsBuLmFMHmweso1a300
+      - name: canvasTest_6_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctuCwcWvqaWGWuW5XNsv6xnW300
+            - name: canvasTest_5_5_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctreUndmUFQbNDQvCiZE6kmG300
+      - name: canvasTest_6_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctuCwcWvqaWGWuW5XNsv6xnW300
+            - name: canvasTest_5_6_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctgkoxvGZb8NyVm3EvCVAyVN300
+      - name: canvasTest_6_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctb5KnqRZoLsEmJ6fRM7EF5t300
+            - name: canvasTest_5_7_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct6d5DdzncQVq2tGd1yxhWXx300
+      - name: canvasTest_6_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctb5KnqRZoLsEmJ6fRM7EF5t300
+            - name: canvasTest_5_8_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctfcDRynfuEFjo2MumSwYJsm300
+      - name: canvasTest_6_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cts18hx8dbhmR5nffUCGbqX4300
+            - name: canvasTest_5_9_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctnz3REUByqQaUfaSAkuCekW300
+      - name: canvasTest_6_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cts18hx8dbhmR5nffUCGbqX4300
+            - name: canvasTest_5_10_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctvodRV5YZkZaYevhddgQUoc300
+      - name: canvasTest_6_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct4g3r1PEkeRVq33M9eNaB1M300
+            - name: canvasTest_5_11_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct3LEVupw4E79PumHshpmzx4300
+      - name: canvasTest_6_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct4g3r1PEkeRVq33M9eNaB1M300
+            - name: canvasTest_5_12_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctbRdPCjzFpaNa7yGEks18Ds300
+      - name: canvasTest_6_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctgJKLLNFTXyKvDxseaswDLG300
+            - name: canvasTest_5_13_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct6AyquVPaSaMMJ2ou8bs6KQ300
+      - name: canvasTest_6_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctgJKLLNFTXyKvDxseaswDLG300
+            - name: canvasTest_5_14_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctjMSoDeg7fdroGbcxsZkmDn300
+      - name: canvasTest_6_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct5dVMn8m3v8n6jVtnh3eogD300
+            - name: canvasTest_5_15_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct2S2yLzdZY6sMGSfFCXMJsT300
+      - name: canvasTest_6_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct5dVMn8m3v8n6jVtnh3eogD300
+            - name: canvasTest_5_16_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cttNoBjfnLVtDU1V1ugrWfwA300
+      - name: canvasTest_6_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctbJA3wChaPHrjVwvdXCKCgm300
+            - name: canvasTest_5_17_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctiKKj58Vc7c7jT9p6vdNSqC300
+      - name: canvasTest_6_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctbJA3wChaPHrjVwvdXCKCgm300
+            - name: canvasTest_5_18_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctvYiV5Ky94H5JLXVjkM8Xvo300
+      - name: canvasTest_6_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctpATDPq1yidND9nAa83XGUT300
+            - name: canvasTest_5_19_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct8cec28Gvky3nBdsYGALJux300
+      - name: canvasTest_6_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctpATDPq1yidND9nAa83XGUT300
+            - name: canvasTest_5_20_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctvzs3jgcFAfyASZbv7iPWWe300
+      - name: canvasTest_6_21_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8yPjqp3T4pHwPkTpuopqR5300
+            - name: canvasTest_5_21_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctryThdDJv8VGMdm2o7sig87300
+      - name: canvasTest_6_22_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8yPjqp3T4pHwPkTpuopqR5300
+            - name: canvasTest_5_22_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctuDdhdmEG12Myfzm5on2Q4r300
+      - name: canvasTest_6_23_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct6ifp2zKxc2QPVzJS1tN3Jy300
+            - name: canvasTest_5_23_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctbeeKJXNp5R9Lvi7JbfGSUp300
+      - name: canvasTest_6_24_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct6ifp2zKxc2QPVzJS1tN3Jy300
+            - name: canvasTest_5_24_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctujKcEEcJm35SRYWyjXnhLx300
+      - name: canvasTest_6_25_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cttSw23sXkqguicUnB7AysLS300
+            - name: canvasTest_5_25_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cto59dQb3hZGdjcCXfSZGFpV300
+      - name: canvasTest_6_26_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cttSw23sXkqguicUnB7AysLS300
+            - name: canvasTest_5_26_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctt2uSV7EpEHWmVWiPEZLPhV300
+      - name: canvasTest_6_27_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctu2sVXZe5EHq2Haq2am7dXP300
+            - name: canvasTest_5_27_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctcXeH8HUcVzSG6pUFBwgB1u300
+      - name: canvasTest_6_28_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctu2sVXZe5EHq2Haq2am7dXP300
+            - name: canvasTest_5_28_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctkAqsgys4rCu3bh9L558JiB300
+      - name: canvasTest_6_29_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctnEWW5usKfsM8cVbykphPpP300
+            - name: canvasTest_5_29_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cts48DmSrhCbobkwYgH7x43V300
+      - name: canvasTest_6_30_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctnEWW5usKfsM8cVbykphPpP300
+            - name: canvasTest_5_30_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctc2Xt1pXzficyibDS4aTMuW300
+      - name: canvasTest_7_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctihyBpgDrMiQ7gvdTcSV9M2300
+            - name: canvasTest_6_1_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct6ajJbS26UCj6Eira36Bj7z300
+      - name: canvasTest_7_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctihyBpgDrMiQ7gvdTcSV9M2300
+            - name: canvasTest_6_2_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctgoyKt6u418d8tJ4bzWjhw3300
+      - name: canvasTest_7_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cthbPkdLwnNLWPfuWgMtZsY4300
+            - name: canvasTest_6_3_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctav2FhT6ahoyyiGWdDHfsYS300
+      - name: canvasTest_7_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cthbPkdLwnNLWPfuWgMtZsY4300
+            - name: canvasTest_6_4_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct9c7qMxWi7XNhNjohZWfPLA300
+      - name: canvasTest_7_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctxaq5TEVhoJCe4ioQaPXyXL300
+            - name: canvasTest_6_5_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctaz3cjsJxLrtj4yQ9Pe42Bd300
+      - name: canvasTest_7_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctxaq5TEVhoJCe4ioQaPXyXL300
+            - name: canvasTest_6_6_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct1M9nsZCTDHKSrkQ1GKS8kG300
+      - name: canvasTest_7_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct1f3LwscTWSFSLeE4cMkJvh300
+            - name: canvasTest_6_7_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctfurfejfQEhp1b4qHRZWvz1300
+      - name: canvasTest_7_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct1f3LwscTWSFSLeE4cMkJvh300
+            - name: canvasTest_6_8_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctuRR53zaZxdDwQGnFVaCD71300
+      - name: canvasTest_7_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct4R88p1nPEQ5eFj76Rc9Lr9300
+            - name: canvasTest_6_9_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctkDRpo5ihaAULHC6kLj3MLb300
+      - name: canvasTest_7_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct4R88p1nPEQ5eFj76Rc9Lr9300
+            - name: canvasTest_6_10_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctrkRv3wW7tikoiNpyhudMUV300
+      - name: canvasTest_7_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctaUJLQY7fXJ1DU5BU7BcRrA300
+            - name: canvasTest_6_11_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctheMGKETbPQrQngMAQ99iJN300
+      - name: canvasTest_7_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctaUJLQY7fXJ1DU5BU7BcRrA300
+            - name: canvasTest_6_12_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctcgGNnN2c3kQXz7FVgLmKyp300
+      - name: canvasTest_7_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctfJJ4hCVQUYMwx97tjHqjWE300
+            - name: canvasTest_6_13_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cts1bVQVwMhqDFrmRM1xQ3hW300
+      - name: canvasTest_7_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctfJJ4hCVQUYMwx97tjHqjWE300
+            - name: canvasTest_6_14_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct9Yje5g4zmGVgusM1DWoHba300
+      - name: canvasTest_7_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct2UWAyeWkTeJSHMBKZ9Ya7z300
+            - name: canvasTest_6_15_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctmLgCDTaNVEwaUBuUxKoNhp300
+      - name: canvasTest_7_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct2UWAyeWkTeJSHMBKZ9Ya7z300
+            - name: canvasTest_6_16_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctwNFLMGrt6nKcyp5g1bw9WH300
+      - name: canvasTest_7_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct6evMh4LLQQuaJfsgCimcdG300
+            - name: canvasTest_6_17_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctpmaF92rGxqfZyyqMSFkWfz300
+      - name: canvasTest_7_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct6evMh4LLQQuaJfsgCimcdG300
+            - name: canvasTest_6_18_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct7rEAj76GwUvxFfY9hbEbkj300
+      - name: canvasTest_7_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctrEMsdxWVTEGjdc2Bj3SbFZ300
+            - name: canvasTest_6_19_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctiFTYSZdutNNrpJf7C4GKUb300
+      - name: canvasTest_7_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctrEMsdxWVTEGjdc2Bj3SbFZ300
+            - name: canvasTest_6_20_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct4CMq7bWe7KmJ2XD35tjN1p300
+      - name: canvasTest_7_21_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct1evG3VcfUgXPG12Dwp6w7b300
+            - name: canvasTest_6_21_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctwQ5CJHEyBC5oJ1yWhqed53300
+      - name: canvasTest_7_22_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct1evG3VcfUgXPG12Dwp6w7b300
+            - name: canvasTest_6_22_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctem26tR4s7HgookEMhABsTL300
+      - name: canvasTest_7_23_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctbSXuAykYH5ZSiddT6v8KkT300
+            - name: canvasTest_6_23_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctn5neixj94r9LAJTs3UQyki300
+      - name: canvasTest_7_24_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctbSXuAykYH5ZSiddT6v8KkT300
+            - name: canvasTest_6_24_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctkpa32kZNSmHnvH3i4PgTzQ300
+      - name: canvasTest_7_25_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cttoSmyGt7wGY1vzsKmFWUNs300
+            - name: canvasTest_6_25_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctwA9qVRWZeJ5gdXXKqjzb89300
+      - name: canvasTest_7_26_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cttoSmyGt7wGY1vzsKmFWUNs300
+            - name: canvasTest_6_26_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct6E7WdYR2TL2by7jC9pLSZw300
+      - name: canvasTest_7_27_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctspMjWeEBi5Fj78QsrfQUde300
+            - name: canvasTest_6_27_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctvKDRTfhyjog4h1N2FBQ76D300
+      - name: canvasTest_7_28_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctspMjWeEBi5Fj78QsrfQUde300
+            - name: canvasTest_6_28_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct5ikQe3Xt1MyacjWKWe77Z2300
+      - name: canvasTest_7_29_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct9EFrq9vdhxyPoxGcVoYsVa300
+            - name: canvasTest_6_29_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctckegMFmqh5mJHVz9MTTdeS300
+      - name: canvasTest_7_30_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct9EFrq9vdhxyPoxGcVoYsVa300
+            - name: canvasTest_6_30_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctbJa9UB4fZXpuG2BDwPfG64300
+      - name: canvasTest_8_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctfCZTm5X2zMzSQ4rQou7KTg300
+            - name: canvasTest_7_1_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctdKVDfR4DBdGtdRBFsG12cM300
+      - name: canvasTest_8_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctfCZTm5X2zMzSQ4rQou7KTg300
+            - name: canvasTest_7_2_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctcDoxoW82D5Kb7s7QYkCcJw300
+      - name: canvasTest_8_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctsUvX4byfgPwh2PSgVQzDvZ300
+            - name: canvasTest_7_3_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctdK9yw1AHYs1gMndAvLnaXz300
+      - name: canvasTest_8_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctsUvX4byfgPwh2PSgVQzDvZ300
+            - name: canvasTest_7_4_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctfariM8JZKoCpZRhEGDjMAL300
+      - name: canvasTest_8_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctfEio98cM7zxzgPdJrV7mUW300
+            - name: canvasTest_7_5_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctgbQiSbiCLce36fYN84XEtF300
+      - name: canvasTest_8_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctfEio98cM7zxzgPdJrV7mUW300
+            - name: canvasTest_7_6_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct9UgbtQagx49jZfckimLuRA300
+      - name: canvasTest_8_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct4qfPr7uvKGcewWpDmEVXR7300
+            - name: canvasTest_7_7_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctvE96uLxZiuXG11xqHqGxVQ300
+      - name: canvasTest_8_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct4qfPr7uvKGcewWpDmEVXR7300
+            - name: canvasTest_7_8_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctoUxhYMbAFcuXGzYisUzJNC300
+      - name: canvasTest_8_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctqqs7RwGknsGvarWVKBst6v300
+            - name: canvasTest_7_9_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctojfy9wSM16msHfTzMoUMp8300
+      - name: canvasTest_8_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctqqs7RwGknsGvarWVKBst6v300
+            - name: canvasTest_7_10_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctht1JdLfyg5fCRcUZS1FBub300
+      - name: canvasTest_8_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctw9LyJZrpyhKzybpw71uvZX300
+            - name: canvasTest_7_11_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct6rir6pPk77Aznm99N1XJhG300
+      - name: canvasTest_8_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctw9LyJZrpyhKzybpw71uvZX300
+            - name: canvasTest_7_12_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctsnd9tUpiTWWT16tWrumsXr300
+      - name: canvasTest_8_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct7SUq78VZpProT1AWN5k7US300
+            - name: canvasTest_7_13_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctgkSTi2hPff57xJhMpQXHj9300
+      - name: canvasTest_8_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct7SUq78VZpProT1AWN5k7US300
+            - name: canvasTest_7_14_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctmdujB7wvL5Sq5iin2GaM7Y300
+      - name: canvasTest_8_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctsUDGmzuYpJaqhPswoDVipw300
+            - name: canvasTest_7_15_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cthLd4zLzWZyXzha5r3Fv5Ch300
+      - name: canvasTest_8_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctsUDGmzuYpJaqhPswoDVipw300
+            - name: canvasTest_7_16_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctq5pVhE5Y1p8iUeWzKe5QXG300
+      - name: canvasTest_8_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct3kvDmoy1oMZzkJwMeMx6Qn300
+            - name: canvasTest_7_17_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct9PyEyWSUQVS9mgwyX8Tpzi300
+      - name: canvasTest_8_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct3kvDmoy1oMZzkJwMeMx6Qn300
+            - name: canvasTest_7_18_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct9QB6S8M4GL19MSvLxedKu3300
+      - name: canvasTest_8_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctxs12tRudXF8t29974PoNUK300
+            - name: canvasTest_7_19_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctmRTJ2NoavhpE7Y4LZEqQBV300
+      - name: canvasTest_8_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctxs12tRudXF8t29974PoNUK300
+            - name: canvasTest_7_20_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctpWMLuEZXLqLCMd8ZSdMJfo300
+      - name: canvasTest_8_21_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct9QDieFFfwiJ8MhvuhpgPYz300
+            - name: canvasTest_7_21_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctbPj12fxxR2KgHs4SFJdFtP300
+      - name: canvasTest_8_22_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct9QDieFFfwiJ8MhvuhpgPYz300
+            - name: canvasTest_7_22_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct9uNWXtXbCUHmGwBGWqMFEW300
+      - name: canvasTest_8_23_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct5ugpnYDrDpaK4VSrtTGY6H300
+            - name: canvasTest_7_23_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct8nt1hhwtfXzkyK5hgqeGnb300
+      - name: canvasTest_8_24_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct5ugpnYDrDpaK4VSrtTGY6H300
+            - name: canvasTest_7_24_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct1iDEsBshSUbHiuZ4sAp7n4300
+      - name: canvasTest_8_25_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct5rxSmGP5n4UmFcNUvdsGP8300
+            - name: canvasTest_7_25_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctpUUZC7stwURMop2YCKpABo300
+      - name: canvasTest_8_26_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct5rxSmGP5n4UmFcNUvdsGP8300
+            - name: canvasTest_7_26_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctmYZm4UjQNWbTcfLyQhJEx8300
+      - name: canvasTest_8_27_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctrDWs8yUdQpBqNuUTU1PhFB300
+            - name: canvasTest_7_27_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctawVADkYwbZsfiPJ16JMXtQ300
+      - name: canvasTest_8_28_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctrDWs8yUdQpBqNuUTU1PhFB300
+            - name: canvasTest_7_28_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct21P9SYy2ESrLyX2TRH1DTL300
+      - name: canvasTest_8_29_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct87UoM4wz75AEjx4fXzsCps300
+            - name: canvasTest_7_29_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct6VgG4KoPwnMMvebQW15faA300
+      - name: canvasTest_8_30_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct87UoM4wz75AEjx4fXzsCps300
+            - name: canvasTest_7_30_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct9fH8gzNeqBmK3TpbVreMP3300
+      - name: canvasTest_9_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cth3xnPta58EP1qnTke1tKMr300
+            - name: canvasTest_8_1_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctrTu53m1rPbHPMTrQnUyGTH300
+      - name: canvasTest_9_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cth3xnPta58EP1qnTke1tKMr300
+            - name: canvasTest_8_2_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctkkcSKBgqkZ93ZKxrpGkwcW300
+      - name: canvasTest_9_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctektD2Cq9ZUkxh55vnW2Umn300
+            - name: canvasTest_8_3_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cthPdXyvTcgFG8BXxfrQStVH300
+      - name: canvasTest_9_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctektD2Cq9ZUkxh55vnW2Umn300
+            - name: canvasTest_8_4_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct77xUn4wgbHW7w4ejxaiBuv300
+      - name: canvasTest_9_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cttHmhkoqjttuBmyvpZTAzbE300
+            - name: canvasTest_8_5_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctjk3gpZHwTSynFWWQbr6KNT300
+      - name: canvasTest_9_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cttHmhkoqjttuBmyvpZTAzbE300
+            - name: canvasTest_8_6_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct7MZydpUoSmSXDp5WaLARGs300
+      - name: canvasTest_9_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8m8K44neKqDmzXqgvXxS8G300
+            - name: canvasTest_8_7_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctjm2NgiyacxEcso5yxZ4SuN300
+      - name: canvasTest_9_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8m8K44neKqDmzXqgvXxS8G300
+            - name: canvasTest_8_8_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct6aMPsSrc52ih7SUH2dCTmN300
+      - name: canvasTest_9_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8moC3iPbKD4wGQenM945pE300
+            - name: canvasTest_8_9_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cthdoFABa6NmefzsL5ViYz4i300
+      - name: canvasTest_9_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct8moC3iPbKD4wGQenM945pE300
+            - name: canvasTest_8_10_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctt5mGht751TpgiYiSULmNNZ300
+      - name: canvasTest_9_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctsmAx3Qqb8HFt4BZiwRJCMF300
+            - name: canvasTest_8_11_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct4dAHPVPcZdzTUH6gMvA348300
+      - name: canvasTest_9_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctsmAx3Qqb8HFt4BZiwRJCMF300
+            - name: canvasTest_8_12_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cttFiT8eNQBqvuzf1L8o2Ffm300
+      - name: canvasTest_9_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct9LCmUXVg7uzJ6NRGfmus1x300
+            - name: canvasTest_8_13_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct7To4qFsLSdbHPip11XjADt300
+      - name: canvasTest_9_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct9LCmUXVg7uzJ6NRGfmus1x300
+            - name: canvasTest_8_14_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct19QDYhgAsm8roiTRp33GTz300
+      - name: canvasTest_9_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctfFMKsgWttr6B7kN4w5SyeJ300
+            - name: canvasTest_8_15_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctcmQmpApW9ZRkpNyiJmLzaR300
+      - name: canvasTest_9_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctfFMKsgWttr6B7kN4w5SyeJ300
+            - name: canvasTest_8_16_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctmJqwu3GjJuqkuRMLf2YCGX300
+      - name: canvasTest_9_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct58qKAUocxZDqsZyA4Mfmeg300
+            - name: canvasTest_8_17_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctwFxRoxRmgw5zjgfzho3UsF300
+      - name: canvasTest_9_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct58qKAUocxZDqsZyA4Mfmeg300
+            - name: canvasTest_8_18_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct1ZwPGTakgihxixM4MY35iG300
+      - name: canvasTest_9_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctqgEdHmtnAnaeX4oekFDDed300
+            - name: canvasTest_8_19_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct6J5bYV329FvZbkw2CweP1d300
+      - name: canvasTest_9_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctqgEdHmtnAnaeX4oekFDDed300
+            - name: canvasTest_8_20_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct2y8EKGmLYhGuxjgfsr2uAB300
+      - name: canvasTest_9_21_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctqjcPAN7heoBav7bve8eHFy300
+            - name: canvasTest_8_21_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctuF1wpdiRBeJaYanSbBMN3b300
+      - name: canvasTest_9_22_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctqjcPAN7heoBav7bve8eHFy300
+            - name: canvasTest_8_22_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cttvSfDMJr4XvZPcyGqCtW3b300
+      - name: canvasTest_9_23_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctrTMEowGPaJu7F5FiqejY4b300
+            - name: canvasTest_8_23_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cteJaXsJyCt5Q2e2C2kz1Q48300
+      - name: canvasTest_9_24_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctrTMEowGPaJu7F5FiqejY4b300
+            - name: canvasTest_8_24_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct56wNDsRvxvSjjacL14NinG300
+      - name: canvasTest_9_25_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctk5Sf9ie8ASwMgH5vJqn9gh300
+            - name: canvasTest_8_25_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctn8YiSNjA7U1hFxjpV9ksD4300
+      - name: canvasTest_9_26_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctk5Sf9ie8ASwMgH5vJqn9gh300
+            - name: canvasTest_8_26_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctkor2jj3HbhkhCoo7wXXGuP300
+      - name: canvasTest_9_27_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctmiV9NZ188QtwRRcGc6tb83300
+            - name: canvasTest_8_27_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctrR5M8BN7wWzUMD1ZTLfGKb300
+      - name: canvasTest_9_28_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctmiV9NZ188QtwRRcGc6tb83300
+            - name: canvasTest_8_28_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctrDtx86CnEgWAHDktSJzSQU300
+      - name: canvasTest_9_29_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctcp1xtXSYaAqJdaNiqtx9tG300
+            - name: canvasTest_8_29_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctwmJtJ4pbj5iRGxN3r82zj2300
+      - name: canvasTest_9_30_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctcp1xtXSYaAqJdaNiqtx9tG300
+            - name: canvasTest_8_30_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctvjtrAS1LctqK9Bhmmr5q7w300
+      - name: canvasTest_10_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctcBjd1rb1CryEK9oU1w7mW9300
+            - name: canvasTest_9_1_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct4QxnETKRsTsWNZbSwqo8VP300
+      - name: canvasTest_10_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctcBjd1rb1CryEK9oU1w7mW9300
+            - name: canvasTest_9_2_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctpSX5ieQfnTKu6xBDJyZXbi300
+      - name: canvasTest_10_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctc8BKcssHLUPFRMzrXnnDaT300
+            - name: canvasTest_9_3_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctonULriUY3mhYV9ZBmwBjjt300
+      - name: canvasTest_10_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctc8BKcssHLUPFRMzrXnnDaT300
+            - name: canvasTest_9_4_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctuQ2GzdspRyGeHHS5N9Hmfm300
+      - name: canvasTest_10_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cttFy3LD1Dk8x2Dd1D9UBg2Y300
+            - name: canvasTest_9_5_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctdivWRVNhMVKBN16F6wzaUC300
+      - name: canvasTest_10_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cttFy3LD1Dk8x2Dd1D9UBg2Y300
+            - name: canvasTest_9_6_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctt2oLvDwe2PY1Xbb4a4USTX300
+      - name: canvasTest_10_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctwGCS5DeBoMG3b3TEJigAAi300
+            - name: canvasTest_9_7_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctg6v7sbeorScFRMEkP9E6Mj300
+      - name: canvasTest_10_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctwGCS5DeBoMG3b3TEJigAAi300
+            - name: canvasTest_9_8_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct1AADKH3PWX1EbipAq1Hbk2300
+      - name: canvasTest_10_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cttNySBfpYRXZQkzZsUaCJrQ300
+            - name: canvasTest_9_9_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctqmU1xJkRGLAdB2R77e1Qt6300
+      - name: canvasTest_10_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: cttNySBfpYRXZQkzZsUaCJrQ300
+            - name: canvasTest_9_10_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct1vra4Jycg2iNRb5fYefzMZ300
+      - name: canvasTest_10_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct2zgKQuPKYpLkVAZDjdYebX300
+            - name: canvasTest_9_11_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctrXT5s2tFMECD3WWnqJREi5300
+      - name: canvasTest_10_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct2zgKQuPKYpLkVAZDjdYebX300
+            - name: canvasTest_9_12_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cteKCLL2hBqvBX5R4vhd6ynp300
+      - name: canvasTest_10_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct6gSBhYpimENsm7KUsGKXyk300
+            - name: canvasTest_9_13_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: cthaqZTBQMcSNWWxT4BsGpYx300
+      - name: canvasTest_10_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ct6gSBhYpimENsm7KUsGKXyk300
+            - name: canvasTest_9_14_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctcFDcDVRAWHXfMa3hQSdHdy300
+      - name: canvasTest_10_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctkoEBFGUqaLrk5jX5Mt8LB5300
+            - name: canvasTest_9_15_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct8rMzHi4bfLdgQZ1RVvQmre300
+      - name: canvasTest_10_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctkoEBFGUqaLrk5jX5Mt8LB5300
+            - name: canvasTest_9_16_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctjyebJrsc42CqmtDAp9RihP300
+      - name: canvasTest_10_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctiodrkWUnJ7wm2ZPirpb7uE300
+            - name: canvasTest_9_17_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctmwQ6Ddb2WY667nAzPb37U6300
+      - name: canvasTest_10_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctiodrkWUnJ7wm2ZPirpb7uE300
+            - name: canvasTest_9_18_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctsLEjSUxuLotneyMDEdSy1g300
+      - name: canvasTest_10_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctgfZhXaZxGhodGPnxMR4cKS300
+            - name: canvasTest_9_19_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctxrPR29J2g35vSCqvp34qpp300
+      - name: canvasTest_10_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctgfZhXaZxGhodGPnxMR4cKS300
+            - name: canvasTest_9_20_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctoZNLjtDwHsM1akYRPA6CSf300
+      - name: canvasTest_10_21_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctb9Pzmp8jwFmaDzdJAW9qEM300
+            - name: canvasTest_9_21_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctjYVzPDM7t4mT3cEnkcobjR300
+      - name: canvasTest_10_22_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctb9Pzmp8jwFmaDzdJAW9qEM300
+            - name: canvasTest_9_22_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctqSnEsL3DNhj1CZtT4PEW3h300
+      - name: canvasTest_10_23_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctpRSNRboi6VLsyLc9eJzwrE300
+            - name: canvasTest_9_23_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctcbRTBhPirE48bZmXEuo8zP300
+      - name: canvasTest_10_24_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctpRSNRboi6VLsyLc9eJzwrE300
+            - name: canvasTest_9_24_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctaw6AfqiUCiu8Vrx1fnFC1A300
+      - name: canvasTest_10_25_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctc2FNSG4GaqeDNF43cqMysF300
+            - name: canvasTest_9_25_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctmRQorYC7ucPcsu8ia29YNe300
+      - name: canvasTest_10_26_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctc2FNSG4GaqeDNF43cqMysF300
+            - name: canvasTest_9_26_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ctq5gVqJekPNRA93ZjidHikU300
+      - name: canvasTest_10_27_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctonqQxGZ6gTJtQKX6oTJAS9300
+            - name: canvasTest_9_27_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: ct8K77itLKBjX5q4Zns4P2Ja300
+      - name: canvasTest_10_28_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas300
-            - name: buildInfoTrigger300
+            - name: propertyCanvas
+            - name: buildInfoTrigger
           inputSteps:
-            - name: ctonqQxGZ6gTJtQKX6oTJAS9300
+            - name: canvasTest_9_28_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: canvasTest_10_29_1
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: canvasTest_9_29_1
+        execution:
+          onExecute:
+            - sleep 1
+            - echo "done"
+      - name: canvasTest_10_30_1
+        type: Bash
+        configuration:
+          inputResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+          inputSteps:
+            - name: canvasTest_9_30_1
         execution:
           onExecute:
             - sleep 1
