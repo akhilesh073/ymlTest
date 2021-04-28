@@ -1,10 +1,15 @@
 const YAML = require('yaml');
 const fs = require('fs');
 
+const limit = 100;
+const levels = 5;
+const branches = 20;
+const steps = 1;
+
 const jsonObject = {
     resources: [
         {
-            name: 'propertyCanvas',
+            name: `propertyCanvas${limit}`,
             type: 'PropertyBag',
             configuration: {
                 key1: 'value1',    
@@ -12,7 +17,7 @@ const jsonObject = {
             }
         },
         {
-            name: 'buildInfoTrigger',
+            name: `buildInfoTrigger${limit}`,
             type: 'BuildInfo',
             configuration: {
                 sourceArtifactory: 'art',    
@@ -29,20 +34,16 @@ const jsonObject = {
     ]
 }
 
-const levels = 20;
-const branches = 25;
-const steps = 1;
-
 const rootStep = {
-    name: `canvasTest_Root`,
+    name: `canvasTest_Root${limit}`,
     type: 'Bash',
     configuration: {
         inputResources: [
             {
-                name: 'propertyCanvas'
+                name: `propertyCanvas${limit}`
             },
             {
-                name: 'buildInfoTrigger'
+                name: `buildInfoTrigger${limit}`
             },
         ],
     },
@@ -70,15 +71,15 @@ const addBranch = (levelTrack, branchTrack) => {
 
 const addStep = (levelTrack, branchTrack, stepTrack) => {
     const step = {
-        name: `canvasTest_${levelTrack}_${branchTrack}_${stepTrack}`,
+        name: `canvasTest${limit}_${levelTrack}_${branchTrack}_${stepTrack}`,
         type: 'Bash',
         configuration: {
             inputResources: [
                 {
-                    name: 'propertyCanvas'
+                    name: `propertyCanvas${limit}`
                 },
                 {
-                    name: 'buildInfoTrigger'
+                    name: `buildInfoTrigger${limit}`
                 },
             ],
         },
@@ -92,20 +93,20 @@ const addStep = (levelTrack, branchTrack, stepTrack) => {
     if (levelTrack === 1 && stepTrack === 1) {
         step.configuration.inputSteps = [
             {
-                name: `canvasTest_Root`
+                name: `canvasTest_Root${limit}`
             }
         ]
     } else {
         if (levelTrack > 1 && stepTrack === 1) {
             step.configuration.inputSteps = [
                 {
-                    name: `canvasTest_${levelTrack - 1}_${branchTrack}_${steps}`
+                    name: `canvasTest${limit}_${levelTrack - 1}_${branchTrack}_${steps}`
                 }
             ]
         } else {
             step.configuration.inputSteps = [
                 {
-                    name: `canvasTest_${levelTrack}_${branchTrack}_${stepTrack - 1}`
+                    name: `canvasTest${limit}_${levelTrack}_${branchTrack}_${stepTrack - 1}`
                 }
             ]
         }
@@ -121,4 +122,4 @@ for (levelTrack = 1; levelTrack <= levels; levelTrack++) {
 const doc = new YAML.Document();
 doc.contents = jsonObject;
 
-fs.writeFileSync('./canvas500.yml', doc.toString());
+fs.writeFileSync(`./canvas${limit}.yml`, doc.toString());

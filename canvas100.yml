@@ -1,10 +1,10 @@
 resources:
-  - name: propertyCanvas
+  - name: propertyCanvas100
     type: PropertyBag
     configuration:
       key1: value1
       key2: value2
-  - name: buildInfoTrigger
+  - name: buildInfoTrigger100
     type: BuildInfo
     configuration:
       sourceArtifactory: art
@@ -13,1212 +13,1212 @@ resources:
 pipelines:
   - name: canvasTest
     steps:
-      - name: canvasTest_Root
+      - name: canvasTest_Root100
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_1_1
+      - name: canvasTest100_1_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_2_1
+      - name: canvasTest100_1_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_3_1
+      - name: canvasTest100_1_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_4_1
+      - name: canvasTest100_1_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_5_1
+      - name: canvasTest100_1_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_6_1
+      - name: canvasTest100_1_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_7_1
+      - name: canvasTest100_1_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_8_1
+      - name: canvasTest100_1_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_9_1
+      - name: canvasTest100_1_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_10_1
+      - name: canvasTest100_1_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_11_1
+      - name: canvasTest100_1_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_12_1
+      - name: canvasTest100_1_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_13_1
+      - name: canvasTest100_1_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_14_1
+      - name: canvasTest100_1_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_15_1
+      - name: canvasTest100_1_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_16_1
+      - name: canvasTest100_1_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_17_1
+      - name: canvasTest100_1_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_18_1
+      - name: canvasTest100_1_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_19_1
+      - name: canvasTest100_1_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_1_20_1
+      - name: canvasTest100_1_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_Root
+            - name: canvasTest_Root100
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_1_1
+      - name: canvasTest100_2_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_1_1
+            - name: canvasTest100_1_1_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_2_1
+      - name: canvasTest100_2_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_2_1
+            - name: canvasTest100_1_2_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_3_1
+      - name: canvasTest100_2_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_3_1
+            - name: canvasTest100_1_3_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_4_1
+      - name: canvasTest100_2_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_4_1
+            - name: canvasTest100_1_4_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_5_1
+      - name: canvasTest100_2_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_5_1
+            - name: canvasTest100_1_5_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_6_1
+      - name: canvasTest100_2_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_6_1
+            - name: canvasTest100_1_6_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_7_1
+      - name: canvasTest100_2_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_7_1
+            - name: canvasTest100_1_7_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_8_1
+      - name: canvasTest100_2_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_8_1
+            - name: canvasTest100_1_8_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_9_1
+      - name: canvasTest100_2_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_9_1
+            - name: canvasTest100_1_9_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_10_1
+      - name: canvasTest100_2_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_10_1
+            - name: canvasTest100_1_10_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_11_1
+      - name: canvasTest100_2_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_11_1
+            - name: canvasTest100_1_11_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_12_1
+      - name: canvasTest100_2_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_12_1
+            - name: canvasTest100_1_12_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_13_1
+      - name: canvasTest100_2_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_13_1
+            - name: canvasTest100_1_13_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_14_1
+      - name: canvasTest100_2_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_14_1
+            - name: canvasTest100_1_14_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_15_1
+      - name: canvasTest100_2_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_15_1
+            - name: canvasTest100_1_15_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_16_1
+      - name: canvasTest100_2_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_16_1
+            - name: canvasTest100_1_16_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_17_1
+      - name: canvasTest100_2_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_17_1
+            - name: canvasTest100_1_17_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_18_1
+      - name: canvasTest100_2_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_18_1
+            - name: canvasTest100_1_18_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_19_1
+      - name: canvasTest100_2_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_19_1
+            - name: canvasTest100_1_19_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_2_20_1
+      - name: canvasTest100_2_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_1_20_1
+            - name: canvasTest100_1_20_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_1_1
+      - name: canvasTest100_3_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_1_1
+            - name: canvasTest100_2_1_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_2_1
+      - name: canvasTest100_3_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_2_1
+            - name: canvasTest100_2_2_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_3_1
+      - name: canvasTest100_3_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_3_1
+            - name: canvasTest100_2_3_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_4_1
+      - name: canvasTest100_3_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_4_1
+            - name: canvasTest100_2_4_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_5_1
+      - name: canvasTest100_3_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_5_1
+            - name: canvasTest100_2_5_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_6_1
+      - name: canvasTest100_3_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_6_1
+            - name: canvasTest100_2_6_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_7_1
+      - name: canvasTest100_3_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_7_1
+            - name: canvasTest100_2_7_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_8_1
+      - name: canvasTest100_3_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_8_1
+            - name: canvasTest100_2_8_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_9_1
+      - name: canvasTest100_3_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_9_1
+            - name: canvasTest100_2_9_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_10_1
+      - name: canvasTest100_3_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_10_1
+            - name: canvasTest100_2_10_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_11_1
+      - name: canvasTest100_3_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_11_1
+            - name: canvasTest100_2_11_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_12_1
+      - name: canvasTest100_3_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_12_1
+            - name: canvasTest100_2_12_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_13_1
+      - name: canvasTest100_3_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_13_1
+            - name: canvasTest100_2_13_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_14_1
+      - name: canvasTest100_3_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_14_1
+            - name: canvasTest100_2_14_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_15_1
+      - name: canvasTest100_3_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_15_1
+            - name: canvasTest100_2_15_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_16_1
+      - name: canvasTest100_3_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_16_1
+            - name: canvasTest100_2_16_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_17_1
+      - name: canvasTest100_3_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_17_1
+            - name: canvasTest100_2_17_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_18_1
+      - name: canvasTest100_3_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_18_1
+            - name: canvasTest100_2_18_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_19_1
+      - name: canvasTest100_3_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_19_1
+            - name: canvasTest100_2_19_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_3_20_1
+      - name: canvasTest100_3_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_2_20_1
+            - name: canvasTest100_2_20_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_1_1
+      - name: canvasTest100_4_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_1_1
+            - name: canvasTest100_3_1_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_2_1
+      - name: canvasTest100_4_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_2_1
+            - name: canvasTest100_3_2_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_3_1
+      - name: canvasTest100_4_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_3_1
+            - name: canvasTest100_3_3_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_4_1
+      - name: canvasTest100_4_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_4_1
+            - name: canvasTest100_3_4_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_5_1
+      - name: canvasTest100_4_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_5_1
+            - name: canvasTest100_3_5_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_6_1
+      - name: canvasTest100_4_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_6_1
+            - name: canvasTest100_3_6_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_7_1
+      - name: canvasTest100_4_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_7_1
+            - name: canvasTest100_3_7_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_8_1
+      - name: canvasTest100_4_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_8_1
+            - name: canvasTest100_3_8_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_9_1
+      - name: canvasTest100_4_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_9_1
+            - name: canvasTest100_3_9_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_10_1
+      - name: canvasTest100_4_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_10_1
+            - name: canvasTest100_3_10_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_11_1
+      - name: canvasTest100_4_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_11_1
+            - name: canvasTest100_3_11_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_12_1
+      - name: canvasTest100_4_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_12_1
+            - name: canvasTest100_3_12_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_13_1
+      - name: canvasTest100_4_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_13_1
+            - name: canvasTest100_3_13_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_14_1
+      - name: canvasTest100_4_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_14_1
+            - name: canvasTest100_3_14_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_15_1
+      - name: canvasTest100_4_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_15_1
+            - name: canvasTest100_3_15_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_16_1
+      - name: canvasTest100_4_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_16_1
+            - name: canvasTest100_3_16_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_17_1
+      - name: canvasTest100_4_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_17_1
+            - name: canvasTest100_3_17_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_18_1
+      - name: canvasTest100_4_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_18_1
+            - name: canvasTest100_3_18_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_19_1
+      - name: canvasTest100_4_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_19_1
+            - name: canvasTest100_3_19_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_4_20_1
+      - name: canvasTest100_4_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_3_20_1
+            - name: canvasTest100_3_20_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_1_1
+      - name: canvasTest100_5_1_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_1_1
+            - name: canvasTest100_4_1_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_2_1
+      - name: canvasTest100_5_2_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_2_1
+            - name: canvasTest100_4_2_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_3_1
+      - name: canvasTest100_5_3_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_3_1
+            - name: canvasTest100_4_3_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_4_1
+      - name: canvasTest100_5_4_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_4_1
+            - name: canvasTest100_4_4_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_5_1
+      - name: canvasTest100_5_5_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_5_1
+            - name: canvasTest100_4_5_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_6_1
+      - name: canvasTest100_5_6_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_6_1
+            - name: canvasTest100_4_6_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_7_1
+      - name: canvasTest100_5_7_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_7_1
+            - name: canvasTest100_4_7_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_8_1
+      - name: canvasTest100_5_8_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_8_1
+            - name: canvasTest100_4_8_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_9_1
+      - name: canvasTest100_5_9_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_9_1
+            - name: canvasTest100_4_9_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_10_1
+      - name: canvasTest100_5_10_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_10_1
+            - name: canvasTest100_4_10_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_11_1
+      - name: canvasTest100_5_11_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_11_1
+            - name: canvasTest100_4_11_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_12_1
+      - name: canvasTest100_5_12_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_12_1
+            - name: canvasTest100_4_12_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_13_1
+      - name: canvasTest100_5_13_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_13_1
+            - name: canvasTest100_4_13_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_14_1
+      - name: canvasTest100_5_14_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_14_1
+            - name: canvasTest100_4_14_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_15_1
+      - name: canvasTest100_5_15_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_15_1
+            - name: canvasTest100_4_15_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_16_1
+      - name: canvasTest100_5_16_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_16_1
+            - name: canvasTest100_4_16_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_17_1
+      - name: canvasTest100_5_17_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_17_1
+            - name: canvasTest100_4_17_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_18_1
+      - name: canvasTest100_5_18_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_18_1
+            - name: canvasTest100_4_18_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_19_1
+      - name: canvasTest100_5_19_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_19_1
+            - name: canvasTest100_4_19_1
         execution:
           onExecute:
             - sleep 1
             - echo "done"
-      - name: canvasTest_5_20_1
+      - name: canvasTest100_5_20_1
         type: Bash
         configuration:
           inputResources:
-            - name: propertyCanvas
-            - name: buildInfoTrigger
+            - name: propertyCanvas100
+            - name: buildInfoTrigger100
           inputSteps:
-            - name: canvasTest_4_20_1
+            - name: canvasTest100_4_20_1
         execution:
           onExecute:
             - sleep 1
