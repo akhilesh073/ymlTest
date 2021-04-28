@@ -11,7 +11,7 @@ resources:
       buildName: backend_build
       buildNumber: 1
 pipelines:
-  - name: canvasTest
+  - name: canvasTest500
     steps:
       - name: canvasTest_Root500
         type: Bash

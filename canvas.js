@@ -1,9 +1,9 @@
 const YAML = require('yaml');
 const fs = require('fs');
 
-const limit = 100;
-const levels = 5;
-const branches = 20;
+const limit = 500;
+const levels = 20;
+const branches = 25;
 const steps = 1;
 
 const jsonObject = {
@@ -28,7 +28,7 @@ const jsonObject = {
     ],
     pipelines: [
         {
-            name: `canvasTest`,
+            name: `canvasTest${limit}`,
             steps: []
         }
     ]
