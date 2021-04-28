@@ -37,7 +37,7 @@ let newLeafNames = [];
 let hasStarted = false;
 
 let totalCount = 1;
-const limit = 1000;
+const limit = 500;
 const createStep = (input, stopProp) => {
     const name = 'ct' + shortUuid.generate().replace(/-/g, '');
     if (!input || stopProp) {
@@ -93,4 +93,4 @@ for (let levelNo = 1; levelNo <= levels; levelNo++) {
 const doc = new YAML.Document();
 doc.contents = jsonObject;
 
-fs.writeFileSync('./canvas.yml', doc.toString());
+fs.writeFileSync('./canvas500.yml', doc.toString());
