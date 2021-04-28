@@ -3,10 +3,19 @@ const fs = require('fs');
 const uuid  = require('uuid');
 const shortUuid  = require('short-uuid');
 
+const levels = 10;
+const branches = 2;
+let leafNames = [];
+let newLeafNames = [];
+let hasStarted = false;
+
+let totalCount = 1;
+const limit = 100;
+
 const jsonObject = {
     resources: [
         {
-            name: 'propertyCanvas',
+            name: `propertyCanvas${limit}`,
             type: 'PropertyBag',
             configuration: {
                 key1: 'value1',    
@@ -14,7 +23,7 @@ const jsonObject = {
             }
         },
         {
-            name: 'buildInfoTrigger',
+            name: `buildInfoTrigger${limit}`,
             type: 'BuildInfo',
             configuration: {
                 sourceArtifactory: 'art',    
@@ -25,33 +34,26 @@ const jsonObject = {
     ],
     pipelines: [
         {
-            name: `canvasTest`,
+            name: `canvasTest${limit}`,
             steps: []
         }
     ]
 }
-const levels = 10;
-const branches = 2;
-let leafNames = [];
-let newLeafNames = [];
-let hasStarted = false;
 
-let totalCount = 1;
-const limit = 500;
 const createStep = (input, stopProp) => {
     const name = 'ct' + shortUuid.generate().replace(/-/g, '');
     if (!input || stopProp) {
         if (totalCount >= limit) return;
         const step = {
-            name: name,
+            name: name + limit,
             type: 'Bash',
             configuration: {
                 inputResources: [
                     {
-                        name: 'propertyCanvas'
+                        name: `propertyCanvas${limit}`
                     },
                     {
-                        name: 'buildInfoTrigger'
+                        name: `buildInfoTrigger${limit}`
                     },
                 ],
             },
@@ -93,4 +95,4 @@ for (let levelNo = 1; levelNo <= levels; levelNo++) {
 const doc = new YAML.Document();
 doc.contents = jsonObject;
 
-fs.writeFileSync('./canvas500.yml', doc.toString());
+fs.writeFileSync(`./canvas${limit}.yml`, doc.toString());
