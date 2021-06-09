@@ -18,7 +18,18 @@
 # #             - npm install
 # #             - npx cypress run
 
-# resources:
+resources:
+  - name: propertyCanvas
+    type: PropertyBag
+    configuration:
+      key1: value1
+      key2: value2
+  - name: buildInfoTrigger
+    type: BuildInfo
+    configuration:
+      sourceArtifactory: art
+      buildName: backend_build
+      buildNumber: 1
 #   - name: prop1
 #     type: PropertyBag
 #     configuration:
@@ -408,8 +419,8 @@ pipelines:
       - name: trigger_9
         type: Bash
         configuration:
-          inputSteps:
-            - name: trigger_1
+          outputResources:
+            - name: propertyCanvas
         execution:
           onExecute:
             - sleep 60
@@ -435,8 +446,8 @@ pipelines:
       - name: trigger_12
         type: Bash
         configuration:
-          inputSteps:
-            - name: trigger_9
+          inputResources:
+            - name: propertyCanvas
         execution:
           onExecute:
             - sleep 60
