@@ -417,7 +417,7 @@ pipelines:
         configuration:
           inputResources:
             - name: buildInfoTrigger
-          intputSteps:
+          inputSteps:
             - name: trigger_1
         execution:
           onExecute:
