@@ -412,6 +412,8 @@ pipelines:
         configuration:
           inputSteps:
             - name: trigger_1
+          inputResources:
+            - name: buildInfoTrigger
         execution:
           onExecute:
             - sleep 60
