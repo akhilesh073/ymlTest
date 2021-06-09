@@ -30,6 +30,11 @@ resources:
       sourceArtifactory: art
       buildName: backend_build
       buildNumber: 1
+  - name: gitResCanvas
+    type: GitRepo
+    configuration:
+      gitProvider: gitResource
+      path: ChaitanyaVootla/ymlTest
 #   - name: prop1
 #     type: PropertyBag
 #     configuration:
@@ -349,6 +354,8 @@ pipelines:
         configuration:
           affinityGroup: trigger
           priority: 0
+          outputResources:
+            - name: gitResCanvas
         execution:
           onExecute:
             - sleep 60
@@ -410,10 +417,9 @@ pipelines:
       - name: trigger_8
         type: Bash
         configuration:
-          inputSteps:
-            - name: trigger_1
           inputResources:
             - name: buildInfoTrigger
+            - name: gitResCanvas
         execution:
           onExecute:
             - sleep 60
