@@ -419,6 +419,8 @@ pipelines:
       - name: trigger_9
         type: Bash
         configuration:
+          inputSteps:
+            - name: trigger_1
           outputResources:
             - name: propertyCanvas
         execution:
