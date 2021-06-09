@@ -354,8 +354,6 @@ pipelines:
         configuration:
           affinityGroup: trigger
           priority: 0
-          outputResources:
-            - name: gitResCanvas
         execution:
           onExecute:
             - sleep 60
@@ -419,7 +417,8 @@ pipelines:
         configuration:
           inputResources:
             - name: buildInfoTrigger
-            - name: gitResCanvas
+          intputSteps:
+            - name: trigger_1
         execution:
           onExecute:
             - sleep 60
