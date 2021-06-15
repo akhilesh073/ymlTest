@@ -401,6 +401,7 @@ pipelines:
       - name: trigger_6
         type: Bash
         configuration:
+          affinityGroup: g2
           inputSteps:
             - name: trigger_4
         execution:
@@ -410,7 +411,6 @@ pipelines:
       - name: trigger_7
         type: Bash
         configuration:
-          affinityGroup: g2
           inputSteps:
             - name: trigger_5
         execution:
@@ -469,6 +469,7 @@ pipelines:
       - name: trigger_13
         type: Bash
         configuration:
+          affinityGroup: g2
           inputSteps:
             - name: trigger_4
         execution:
