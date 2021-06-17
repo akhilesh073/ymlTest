@@ -472,7 +472,7 @@ pipelines:
           affinityGroup: g2
           inputSteps:
             - name: trigger_4
-          inputResource:
+          inputResources:
             - name: gitResCanvas
         execution:
           onExecute:
