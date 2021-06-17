@@ -472,6 +472,8 @@ pipelines:
           affinityGroup: g2
           inputSteps:
             - name: trigger_4
+          inputResource:
+            - name: gitResCanvas
         execution:
           onExecute:
             - sleep 60
