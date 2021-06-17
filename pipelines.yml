@@ -15,36 +15,6 @@ resources:
     configuration:
       gitProvider: gitResource
       path: ChaitanyaVootla/ymlTest
-#   - name: buildInfo
-#     type: BuildInfo
-#     configuration:
-#       sourceArtifactory: art
-#       buildName: backend_build
-#       buildNumber: 1
-#   - name: buildInfo2
-#     type: BuildInfo
-#     configuration:
-#       sourceArtifactory: art
-#       buildName: backend_build
-#       buildNumber: 1
-#   - name: buildInfo3
-#     type: BuildInfo
-#     configuration:
-#       sourceArtifactory: art
-#       buildName: backend_build
-#       buildNumber: 1
-#   - name: buildInfo4
-#     type: BuildInfo
-#     configuration:
-#       sourceArtifactory: art
-#       buildName: backend_build
-#       buildNumber: 1
-#   - name: buildInfo5
-#     type: BuildInfo
-#     configuration:
-#       sourceArtifactory: art
-#       buildName: backend_build
-#       buildNumber: 1
 pipelines:
   - name: trigger_test
     steps:
