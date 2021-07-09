@@ -17,7 +17,7 @@ resources:
       path: ChaitanyaVootla/ymlTest
 pipelines:
   - name: trigger_test
-    configuration:
+#     configuration:
 #       environmentVariables:
 #         env-p1: 1
 #         env-p2: 2
