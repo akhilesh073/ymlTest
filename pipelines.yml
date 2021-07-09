@@ -18,12 +18,12 @@ resources:
 pipelines:
   - name: trigger_test
     configuration:
-      environmentVariables:
-        env-p1: 1
-        env-p2: 2
-        readOnly:
-          env-pr1: 1
-          env-pr2: 2
+#       environmentVariables:
+#         env-p1: 1
+#         env-p2: 2
+#         readOnly:
+#           env-pr1: 1
+#           env-pr2: 2
     steps:
       - name: trigger_1
         type: Bash
