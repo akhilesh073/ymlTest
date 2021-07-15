@@ -37,19 +37,19 @@ pipelines:
           onExecute:
             - sleep 60
             - echo "done"
-      - name: jenkins
-        type: Jenkins
-        configuration:
-          jenkinsJobName: somename
-          integrations:
-            - name: jenkins
+#       - name: jenkins
+#         type: Jenkins
+#         configuration:
+#           jenkinsJobName: somename
+#           integrations:
+#             - name: jenkins
       - name: trigger_2
         type: Bash
         configuration:
           affinityGroup: g1
           inputSteps:
             - name: trigger_1
-            - name: jenkins
+#             - name: jenkins
         execution:
           onExecute:
             - sleep 60
