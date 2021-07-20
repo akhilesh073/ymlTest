@@ -33,7 +33,7 @@ pipelines:
           priority: 0
         execution:
           onExecute:
-            - sleep 60
+            - printenv
             - echo "done"
 #       - name: jenkins
 #         type: Jenkins
