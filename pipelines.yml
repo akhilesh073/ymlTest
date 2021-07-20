@@ -17,13 +17,11 @@ resources:
       path: ChaitanyaVootla/ymlTest
 pipelines:
   - name: trigger_test
-#     configuration:
-#       environmentVariables:
-#         env-p1: 1
-#         env-p2: 2
-#         readOnly:
-#           env-pr1: 1
-#           env-pr2: 2
+    configuration:
+      environmentVariables:
+        readOnly:
+          pipe-var1: 1
+          pipe-var2: 2
     steps:
       - name: trigger_1
         type: Bash
