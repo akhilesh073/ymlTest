@@ -50,116 +50,117 @@ pipelines:
 #             - name: jenkins
         execution:
           onExecute:
-            - sleep 60
+            - printenv
+            - sleep 10
             - echo "done"
-      - name: trigger_3
-        type: Bash
-        configuration:
-          affinityGroup: g2
-          inputSteps:
-            - name: trigger_2
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_4
-        type: Bash
-        configuration:
-          affinityGroup: g2
-          inputSteps:
-            - name: trigger_3
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_5
-        type: Bash
-        configuration:
-          affinityGroup: g1
-          inputSteps:
-            - name: trigger_1
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_6
-        type: Bash
-        configuration:
-          affinityGroup: g2
-          inputSteps:
-            - name: trigger_4
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_7
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_5
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_8
-        type: Bash
-        configuration:
-          inputResources:
-            - name: buildInfoTrigger
-          inputSteps:
-            - name: trigger_1
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_9
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_1
-          outputResources:
-            - name: propertyCanvas
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_10
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_1
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_11
-        type: Bash
-        configuration:
-          inputSteps:
-            - name: trigger_7
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_12
-        type: Bash
-        configuration:
-          inputResources:
-            - name: propertyCanvas
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
-      - name: trigger_13
-        type: Bash
-        configuration:
-          affinityGroup: g2
-          inputSteps:
-            - name: trigger_4
-          inputResources:
-            - name: gitResCanvas
-        execution:
-          onExecute:
-            - sleep 60
-            - echo "done"
+#       - name: trigger_3
+#         type: Bash
+#         configuration:
+#           affinityGroup: g2
+#           inputSteps:
+#             - name: trigger_2
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_4
+#         type: Bash
+#         configuration:
+#           affinityGroup: g2
+#           inputSteps:
+#             - name: trigger_3
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_5
+#         type: Bash
+#         configuration:
+#           affinityGroup: g1
+#           inputSteps:
+#             - name: trigger_1
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_6
+#         type: Bash
+#         configuration:
+#           affinityGroup: g2
+#           inputSteps:
+#             - name: trigger_4
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_7
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_5
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_8
+#         type: Bash
+#         configuration:
+#           inputResources:
+#             - name: buildInfoTrigger
+#           inputSteps:
+#             - name: trigger_1
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_9
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_1
+#           outputResources:
+#             - name: propertyCanvas
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_10
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_1
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_11
+#         type: Bash
+#         configuration:
+#           inputSteps:
+#             - name: trigger_7
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_12
+#         type: Bash
+#         configuration:
+#           inputResources:
+#             - name: propertyCanvas
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
+#       - name: trigger_13
+#         type: Bash
+#         configuration:
+#           affinityGroup: g2
+#           inputSteps:
+#             - name: trigger_4
+#           inputResources:
+#             - name: gitResCanvas
+#         execution:
+#           onExecute:
+#             - sleep 60
+#             - echo "done"
 
