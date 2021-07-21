@@ -20,8 +20,8 @@ pipelines:
     configuration:
       environmentVariables:
         readOnly:
-          pipe-var1: 1
-          pipe-var2: 2
+          pipevar1: 1
+          pipevar2: 2
     steps:
       - name: trigger_1
         type: Bash
