@@ -45,6 +45,9 @@ pipelines:
         type: Bash
         configuration:
           affinityGroup: g1
+          environmentVariables:
+            step2env1: 1
+            step2env2: 2
           inputSteps:
             - name: trigger_1
 #             - name: jenkins
