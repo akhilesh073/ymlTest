@@ -54,7 +54,18 @@ pipelines:
         execution:
           onExecute:
             - printenv
-            - sleep 10
+            - echo "done"
+      - name: trigger_2
+        type: PostMatrix
+        configuration:
+          environmentVariables:
+            postenv1: 1
+            postenv2: 2
+          inputSteps:
+            - name: trigger_1
+#             - name: jenkins
+        execution:
+          onExecute:
             - echo "done"
 #       - name: trigger_3
 #         type: Bash
