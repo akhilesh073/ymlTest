@@ -31,7 +31,7 @@ pipelines:
             env1: 1
             env2: 2
           priority: 0
-          inpurResources:
+          inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
             - name: gitResCanvas
@@ -55,7 +55,7 @@ pipelines:
           inputSteps:
             - name: trigger_1
 #             - name: jenkins
-          inpurResources:
+          inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
             - name: gitResCanvas
@@ -72,7 +72,7 @@ pipelines:
           inputSteps:
             - name: trigger_1
 #             - name: jenkins
-          inpurResources:
+          inputResources:
             - name: propertyCanvas
             - name: buildInfoTrigger
             - name: gitResCanvas
