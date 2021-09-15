@@ -55,7 +55,7 @@ pipelines:
           onExecute:
             - printenv
             - echo "done"
-      - name: trigger_2
+      - name: postTrigger
         type: PostMatrix
         configuration:
           environmentVariables:
