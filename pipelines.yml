@@ -31,6 +31,10 @@ pipelines:
             env1: 1
             env2: 2
           priority: 0
+          inpurResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+            - name: gitResCanvas
         execution:
           onExecute:
             - printenv
@@ -51,6 +55,10 @@ pipelines:
           inputSteps:
             - name: trigger_1
 #             - name: jenkins
+          inpurResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+            - name: gitResCanvas
         execution:
           onExecute:
             - printenv
@@ -64,6 +72,10 @@ pipelines:
           inputSteps:
             - name: trigger_1
 #             - name: jenkins
+          inpurResources:
+            - name: propertyCanvas
+            - name: buildInfoTrigger
+            - name: gitResCanvas
         execution:
           onExecute:
             - echo "done"
