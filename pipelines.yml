@@ -4,6 +4,11 @@ resources:
     configuration:
       key1: value1
       key2: value2
+  - name: propertyCanvas2
+    type: PropertyBag
+    configuration:
+      key1: value1
+      key2: value2
   - name: buildInfoTrigger
     type: BuildInfo
     configuration:
@@ -35,6 +40,7 @@ pipelines:
             - name: propertyCanvas
             - name: buildInfoTrigger
             - name: gitResCanvas
+            - name: propertyCanvas2
         execution:
           onExecute:
             - printenv
@@ -57,6 +63,7 @@ pipelines:
 #             - name: jenkins
           inputResources:
             - name: propertyCanvas
+            - name: propertyCanvas2
             - name: buildInfoTrigger
             - name: gitResCanvas
         execution:
@@ -74,6 +81,7 @@ pipelines:
 #             - name: jenkins
           inputResources:
             - name: propertyCanvas
+            - name: propertyCanvas2
             - name: buildInfoTrigger
             - name: gitResCanvas
         execution:
