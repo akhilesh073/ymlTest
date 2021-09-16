@@ -34,7 +34,9 @@ pipelines:
           affinityGroup: trigger
           environmentVariables:
             env1: 1
-            env2: 2
+            env2:
+              default: 2
+              description: someDescription
           priority: 0
           inputResources:
             - name: propertyCanvas
