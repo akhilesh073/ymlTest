@@ -19,7 +19,11 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: gitResource
-      path: ChaitanyaVootla/ymlTest
+      path: ChaitanyaVootla/ymlTestresources:
+  - name: incomw
+    type: IncomingWebhook
+    configuration:
+      webhookName: incomw
 pipelines:
   - name: single_test
     configuration:
@@ -64,6 +68,7 @@ pipelines:
             - name: buildInfoTrigger
             - name: gitResCanvas
             - name: propertyCanvas2
+            - name: incomw
         execution:
           onExecute:
             - printenv
