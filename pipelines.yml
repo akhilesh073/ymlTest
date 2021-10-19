@@ -19,7 +19,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: gitResource
-      path: ChaitanyaVootla/ymlTestresources
+      path: ChaitanyaVootla/ymlTest
   - name: incomw
     type: IncomingWebhook
     configuration:
