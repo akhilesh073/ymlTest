@@ -1,0 +1,81 @@
+pipelines:
+  - name: multipipe_1
+    steps:
+      - name: multipipe_1_1
+        type: Bash
+        execution:
+          onExecute:
+            - printenv
+            - echo "done"
+  - name: multipipe_2
+    steps:
+      - name: multipipe_1_2
+        type: Bash
+        execution:
+          onExecute:
+            - printenv
+            - echo "done"
+  - name: multipipe_3
+    steps:
+      - name: multipipe_1_3
+        type: Bash
+        execution:
+          onExecute:
+            - printenv
+            - echo "done"
+  - name: multipipe_4
+    steps:
+      - name: multipipe_1_4
+        type: Bash
+        execution:
+          onExecute:
+            - printenv
+            - echo "done"
+  - name: multipipe_5
+    steps:
+      - name: multipipe_1_5
+        type: Bash
+        execution:
+          onExecute:
+            - printenv
+            - echo "done"
+  - name: multipipe_6
+    steps:
+      - name: multipipe_1_6
+        type: Bash
+        execution:
+          onExecute:
+            - printenv
+            - echo "done"
+  - name: multipipe_7
+    steps:
+      - name: multipipe_1_7
+        type: Bash
+        execution:
+          onExecute:
+            - printenv
+            - echo "done"
+  - name: multipipe_8
+    steps:
+      - name: multipipe_1_8
+        type: Bash
+        execution:
+          onExecute:
+            - printenv
+            - echo "done"
+  - name: multipipe_9
+    steps:
+      - name: multipipe_1_9
+        type: Bash
+        execution:
+          onExecute:
+            - printenv
+            - echo "done"
+  - name: multipipe_10
+    steps:
+      - name: multipipe_1_10
+        type: Bash
+        execution:
+          onExecute:
+            - printenv
+            - echo "done"
