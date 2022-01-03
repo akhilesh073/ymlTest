@@ -98,6 +98,7 @@ pipelines:
           onExecute:
             - printenv
             - echo "done"
+            - write_output propertyCanvas "description=\"hello world\""
       - name: postTrigger
         type: PostMatrix
         configuration:
