@@ -4,6 +4,7 @@ resources:
     configuration:
       key1: value1
       key2: value2
+      pipelines: "user_in"
   - name: propertyCanvas2
     type: PropertyBag
     configuration:
@@ -88,20 +89,26 @@ pipelines:
 #           inputSteps:
 #             - name: trigger_1
 #             - name: jenkins
-          inputResources:
-            - name: propertyCanvas2
-            - name: buildInfoTrigger
-            - name: gitResCanvas
+#           inputResources:
+#             - name: propertyCanvas2
+#             - name: buildInfoTrigger
+#             - name: gitResCanvas
           outputResources:
             - name: propertyCanvas
         execution:
           onExecute:
-            - printenv
-            - echo "done"
-            - write_output propertyCanvas "description=\"hello world\""
-            - add_pipeline_variables prev_runid=$run_id
-            - touch testreport.xml
-            - save_tests testreport.xml
+#             - printenv
+#             - echo "done"
+#             - write_output propertyCanvas "description=\"hello world\""
+#             - add_pipeline_variables prev_runid=$run_id
+#             - touch testreport.xml
+#             - save_tests testreport.xml
+            - echo runs > cache.file
+            - add_cache_files cache.file runs.file
+            - echo "state=pipeline2" > cache.txt
+            - add_run_files cache.txt run_state_file
+            - add_pipeline_files cache.txt pipe_state_file
+            - write_output propertyCanvas "pipelines=$run_id"
 #       - name: postTrigger
 #         type: PostMatrix
 #         configuration:
