@@ -64,7 +64,6 @@ pipelines:
               description: someDescription
           priority: 0
           inputResources:
-            - name: propertyCanvas
             - name: buildInfoTrigger
             - name: gitResCanvas
             - name: propertyCanvas2
@@ -110,7 +109,6 @@ pipelines:
             - name: trigger_1
 #             - name: jenkins
           inputResources:
-            - name: propertyCanvas
             - name: propertyCanvas2
             - name: buildInfoTrigger
             - name: gitResCanvas
