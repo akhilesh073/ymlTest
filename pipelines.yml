@@ -94,6 +94,8 @@ pipelines:
             - name: propertyCanvas2
             - name: buildInfoTrigger
             - name: gitResCanvas
+          outputResources:
+            - name: propertyCanvas
         execution:
           onExecute:
             - printenv
