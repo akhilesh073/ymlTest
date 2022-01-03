@@ -89,10 +89,10 @@ pipelines:
 #           inputSteps:
 #             - name: trigger_1
 #             - name: jenkins
-#           inputResources:
+          inputResources:
 #             - name: propertyCanvas2
 #             - name: buildInfoTrigger
-#             - name: gitResCanvas
+            - name: gitResCanvas
           outputResources:
             - name: propertyCanvas
         execution:
