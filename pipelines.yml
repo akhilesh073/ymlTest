@@ -99,6 +99,7 @@ pipelines:
             - printenv
             - echo "done"
             - write_output propertyCanvas "description=\"hello world\""
+            - add_pipeline_variables prev_runid=$run_id
       - name: postTrigger
         type: PostMatrix
         configuration:
