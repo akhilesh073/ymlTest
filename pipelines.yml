@@ -109,6 +109,7 @@ pipelines:
             - add_run_files cache.txt run_state_file
             - add_pipeline_files cache.txt pipe_state_file
             - write_output propertyCanvas "pipelines=$run_id"
+            - save_tests cache.txt
 #       - name: postTrigger
 #         type: PostMatrix
 #         configuration:
