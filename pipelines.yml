@@ -10,21 +10,21 @@ resources:
     configuration:
       key1: value1
       key2: value2
-  - name: buildInfoTrigger
-    type: BuildInfo
-    configuration:
-      sourceArtifactory: art
-      buildName: backend_build
-      buildNumber: 1
-  - name: gitResCanvas
-    type: GitRepo
-    configuration:
-      gitProvider: gitResource
-      path: ChaitanyaVootla/ymlTest
-  - name: incomw
-    type: IncomingWebhook
-    configuration:
-      webhookName: incomw
+#   - name: buildInfoTrigger
+#     type: BuildInfo
+#     configuration:
+#       sourceArtifactory: art
+#       buildName: backend_build
+#       buildNumber: 1
+#   - name: gitResCanvas
+#     type: GitRepo
+#     configuration:
+#       gitProvider: gitResource
+#       path: ChaitanyaVootla/ymlTest
+#   - name: incomw
+#     type: IncomingWebhook
+#     configuration:
+#       webhookName: incomw
 pipelines:
   - name: single_test
     configuration:
