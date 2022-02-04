@@ -92,7 +92,7 @@ pipelines:
           inputResources:
 #             - name: propertyCanvas2
 #             - name: buildInfoTrigger
-            - name: gitResCanvas
+#             - name: gitResCanvas
           outputResources:
             - name: propertyCanvas
         execution:
