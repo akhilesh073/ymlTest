@@ -1,4 +1,9 @@
-
+resources:
+  - name: gitResCanvas
+    type: GitRepo
+    configuration:
+      gitProvider: gitResource
+      path: ChaitanyaVootla/ymlTest
 pipelines:
   - name: matrix
     configuration:
@@ -6,6 +11,8 @@ pipelines:
         readOnly:
           pipevar1: 1
           pipevar2: 2
+      inputResources:
+       - name: gitResCanvas
     steps:
       - name: matrix
         type: Matrix
