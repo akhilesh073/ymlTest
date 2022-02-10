@@ -5,26 +5,22 @@ resources:
       gitProvider: gitResource
       path: ChaitanyaVootla/ymlTest
 pipelines:
-  - name: bash
-    type: Bash
-    execution:
-      onExecute:
-        - pushd $res_platform_ui_bbs_resourcePath
-    configuration:
-      inputResources:
-        - name: gitResCanvas
   - name: matrix
-    configuration:
-      environmentVariables:
-        readOnly:
-          pipevar1: 1
-          pipevar2: 2
-      inputSteps:
-        - name: bash
     steps:
+      - name: bash
+        type: Bash
+        configuration:
+          inputResources:
+            - name: gitResCanvas
+        execution:
+          onExecute:
+            - echo "asd"
       - name: matrix
         type: Matrix
         stepMode: Bash
+        configuration:
+          inputSteps:
+            - name: bash
 
         stepletMultipliers:
           environmentVariables:             # Sets of environment variables for steplets
