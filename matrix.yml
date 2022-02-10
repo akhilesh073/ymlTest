@@ -1,33 +1,42 @@
-- name: matrix_example
-  type: Matrix
-  stepMode: Bash
- 
-  stepletMultipliers:
-    environmentVariables:             # Sets of environment variables for steplets
-      - animal:    dog                # - Set 1
-        mineral:   copper
-        vegetable: carrot
-      - animal:    goat               # - Set 2
-        mineral:   iron
-        vegetable: broccoli
-      - animal:    lizard             # - Set 3
-        mineral:   lead
- 
-    runtimes:                         # Runtimes for steplets
-      - type: image
-        image:
-          auto:
-            language: java
-            versions:
-              - 13.0
-      - type: image
-        image:
-          auto:
-            language: node
-            versions:
-              - 8.17.0
-  execution:
-    onExecute:
-      - echo "I am executing matrix steplet ${steplet_id}"
-      - echo "Envs animal= $animal , mineral = $mineral , vegetable = $vegetable"
-      - echo "Runtime image name $step_image_name | Runtime image tag $step_image_tag"
+
+pipelines:
+  - name: matrix
+    configuration:
+      environmentVariables:
+        readOnly:
+          pipevar1: 1
+          pipevar2: 2
+    steps:
+      - name: matrix
+        type: Matrix
+        stepMode: Bash
+
+        stepletMultipliers:
+          environmentVariables:             # Sets of environment variables for steplets
+            - animal:    dog                # - Set 1
+              mineral:   copper
+              vegetable: carrot
+            - animal:    goat               # - Set 2
+              mineral:   iron
+              vegetable: broccoli
+            - animal:    lizard             # - Set 3
+              mineral:   lead
+
+          runtimes:                         # Runtimes for steplets
+            - type: image
+              image:
+                auto:
+                  language: java
+                  versions:
+                    - 13.0
+            - type: image
+              image:
+                auto:
+                  language: node
+                  versions:
+                    - 8.17.0
+        execution:
+          onExecute:
+            - echo "I am executing matrix steplet ${steplet_id}"
+            - echo "Envs animal= $animal , mineral = $mineral , vegetable = $vegetable"
+            - echo "Runtime image name $step_image_name | Runtime image tag $step_image_tag"
